@@ -19,16 +19,21 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--font-body);
-    background-color: #ffffff; /* White background for the sections below hero */
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 .text-accent {
@@ -1574,17 +1579,24 @@ body {
     html {
         font-size: 14px;
     }
+    .container {
+        padding: 0 1rem !important;
+    }
     section, .services-section, .why-choose, .global-presence, .testimonial-section, .blog-section {
         padding: 4rem 0 !important;
     }
 
     /* Header & Navigation */
+    .top-bar {
+        padding: 1rem !important;
+    }
     .top-contact {
         display: none !important; /* Hide extra contact info to save space */
     }
     .bottom-nav {
         position: relative;
         flex-wrap: wrap;
+        padding: 1rem !important;
     }
     .mobile-menu-icon {
         display: block;
