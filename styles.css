@@ -1683,4 +1683,24 @@ body {
     .cta-decor-left, .cta-decor-right {
         display: none !important;
     }
+
+    /* About Stats & Gears */
+    .stats-row {
+        gap: 1.5rem !important;
+        flex-direction: column;
+    }
+    .stat-num {
+        font-size: 2.5rem !important;
+    }
+    .gears-container {
+        width: 100% !important;
+        max-width: 400px;
+        transform: scale(0.8);
+        transform-origin: top center;
+    }
+    
+    /* Stats Banner */
+    .stats-banner-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
 }
