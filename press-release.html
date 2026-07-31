@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Apex Petroleum</title>
+    <title>Press Release | Apex Petroleum</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header class="main-header">
         <div class="top-bar">
             <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
@@ -70,46 +71,55 @@
             <div class="search-icon">🔍</div>
         </nav>
     </header>
-
-    <!-- Inner Page Banner -->
+    <!-- Inner Banner -->
     <section class="inner-banner">
         <div class="container center">
             <div class="breadcrumbs">
-                <a href="index.html">Home</a> &raquo; <span>About Us</span>
+                <a href="index.html">Home</a> &raquo; <a href="#">Newsroom</a> &raquo; <span>Press Release</span>
             </div>
-            <h1 class="inner-title">About Us</h1>
+            <h1 class="inner-title">Press Release</h1>
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="about-section" style="padding-top: 5rem; padding-bottom: 5rem;">
-        <div class="container about-layout">
-            <div class="about-left">
-                <h4 class="subtitle text-accent">About Our Company</h4>
-                <h2 class="title">Leading Provider of <br>Industrial Solutions</h2>
-                <p>Apex Petroleum is a leading manufacturer and supplier of top-quality lubricants and specialty products for diverse sectors - Automotive, Agriculture, Aviation, Power generation, Construction, Metal working & Marine.</p>
-                <p>Our strong in-house R&D provides solutions with accurate formulations to any challenges from modern day industrial requirements or complex applications. Our advanced state-of-art machinery guarantees massive volumes with equal efficiency.</p>
+    <!-- Main Content -->
+    <section style="padding: 4rem 0; min-height: 50vh; background-color: #f8f9fa;">
+        <div class="container">
+            <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: #0b1120; margin-bottom: 1rem; text-align: center;">Latest Press Release</h2>
+            <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto 3rem; line-height: 1.6;">Stay up to date with the newest developments, announcements, and insights from Apex Petroleum.</p>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('images/hero-bg.png');"></div>
+                    <div class="news-content">
+                        <div class="news-date">August 15, 2026</div>
+                        <h3 class="news-title">Apex Petroleum Announces Expansion of European Facilities</h3>
+                        <p class="news-excerpt">In a strategic move to meet growing demand, Apex Petroleum has unveiled plans to double its production capacity in Europe.</p>
+                        <a href="#" class="news-link">Read Full Story</a>
+                    </div>
+                </div>
                 
-                <p>At <strong>Apex Petroleum</strong>, we believe that energy is more than a resource — it's the driving force behind progress. As a trusted division of <strong>Apex Global Group</strong>, we deliver petroleum products and services that combine reliability, safety, and innovation.</p>
-                <ul class="why-list" style="margin-top: 2rem;">
-                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="text-accent">✓</span> Proven Industry Expertise
-                    </li>
-                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="text-accent">✓</span> Global Supply Chain Network
-                    </li>
-                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="text-accent">✓</span> High Quality & Safety Standards
-                    </li>
-                </ul>
-            </div>
-            <div class="about-right">
-                <img src="images/refinery.png" alt="About Us" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('images/refinery.png');"></div>
+                    <div class="news-content">
+                        <div class="news-date">July 22, 2026</div>
+                        <h3 class="news-title">Launch of Next-Generation Eco-Friendly Lubricants</h3>
+                        <p class="news-excerpt">Our new line of sustainable industrial lubricants promises to reduce carbon footprint without compromising on performance.</p>
+                        <a href="#" class="news-link">Read Full Story</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('images/engine-bg.png');"></div>
+                    <div class="news-content">
+                        <div class="news-date">June 10, 2026</div>
+                        <h3 class="news-title">Quarterly Earnings Report: Q2 Exceeds Expectations</h3>
+                        <p class="news-excerpt">Apex Petroleum reported record-breaking revenue for the second quarter, driven by strong sales in the automotive oil sector.</p>
+                        <a href="#" class="news-link">Read Full Story</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-        <footer class="footer-main">
+<footer class="footer-main">
         <div class="footer-overlay"></div>
         <div class="footer-content">
             <div class="container footer-grid">
@@ -165,6 +175,8 @@
             </div>
         </div>
     </footer>
+
+
     <script src="main.js"></script>
 </body>
 </html>
