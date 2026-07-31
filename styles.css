@@ -120,12 +120,23 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    background-color: var(--accent);
     color: #fff;
-    /* Create the slanted left edge */
     margin-left: 20%;
-    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
     height: 60px;
+    position: relative;
+}
+
+.bottom-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    /* Create the slanted left edge */
+    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%);
+    z-index: -1;
 }
 
 .nav-links {
@@ -145,6 +156,72 @@ body {
 
 .nav-links a:hover {
     opacity: 0.8;
+}
+
+/* Dropdown Menu */
+.nav-links .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+/* Invisible bridge to prevent hover loss */
+.dropdown-menu::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: transparent;
+}
+
+/* Arrow */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: #111;
+    padding: 0.8rem 1.5rem;
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: none;
+    opacity: 1;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--accent);
+    opacity: 1;
+    background-color: rgba(0,0,0,0.02);
 }
 
 .search-icon {
@@ -1702,5 +1779,230 @@ body {
     /* Stats Banner */
     .stats-banner-grid {
         grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+/* --- Inner Page Styles --- */
+.inner-banner {
+    background-color: #020617; /* Dark blue */
+    padding: 12rem 0 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.breadcrumbs a {
+    color: #fff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.breadcrumbs a:hover {
+    color: var(--accent);
+}
+
+.inner-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* Vision Mission Section */
+.vm-section {
+    padding: 6rem 0;
+    background-color: #fff;
+}
+
+.vm-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .vm-layout {
+        grid-template-columns: 1fr;
+    }
+    .vm-empty {
+        display: none;
+    }
+}
+
+.vm-heading {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: #0b1120;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.vm-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.vm-tabs {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+
+.vm-tab-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--font-heading);
+}
+
+.vm-tab-btn.active {
+    color: var(--accent);
+}
+
+.vm-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.vm-tab-content p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* --- Investors Relation Page Styles --- */
+.investor-intro {
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.investor-intro-content {
+    position: relative;
+}
+
+.investor-watermark {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgba(0,0,0,0.03);
+    font-family: var(--font-heading);
+    z-index: -1;
+}
+
+.investor-mission {
+    padding: 4rem 0;
+}
+
+.mission-list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mission-card {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.mission-icon {
+    background-color: #3b82f6; /* bright blue */
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mission-text {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    color: #0b1120;
+}
+
+.corp-gov {
+    padding: 4rem 0 6rem;
+}
+
+.gov-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.gov-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.gov-number {
+    background-color: #f59e0b; /* amber */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-family: var(--font-heading);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.gov-content h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: #0b1120;
+    margin-bottom: 0.5rem;
+}
+
+.gov-content p {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.gov-dot {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--accent);
+}
+
+@media (max-width: 992px) {
+    .investor-intro {
+        grid-template-columns: 1fr;
+    }
+    .gov-grid {
+        grid-template-columns: 1fr;
     }
 }
