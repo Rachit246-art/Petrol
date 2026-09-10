@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "soluble-cutting-oil",
+    "name": "Soluble Cutting Oil",
+    "brand": "KEMBOT SOL XL / SUPERCOOL - S",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "20-150-001.I",
+    "equivalent": "COOLEDGE - 40, SERVOCUT - S / SHEROL - B / COOL - CUT - 40",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "High-performance bio-stable water-soluble cutting fluid for severe metal machining.",
+    "description": "Kembot Soluble Cutting Oil is a premium emulsifiable metalworking fluid formulated with refined base oils, extreme pressure additives, and multi-component biocides. It forms a highly stable, milky emulsion when mixed with water and provides exceptional cooling and lubricating characteristics.",
+    "applications": [
+      "Recommended for all major metal cutting and machining operations including grinding, planing, drilling, milling, shaping, and turning.",
+      "Suitable for both ferrous metals and most non-ferrous alloys.",
+      "Ideal for centralized coolant systems as well as individual CNC machines."
+    ],
+    "usageGuide": "General mix ratio is 1:20 for heavy operations and 1:30 for light to medium machining jobs. Compatible with water hardness ranging from 400 to 600 ppm.",
+    "features": [
+      "Superior protection against rust, wear, frictional heat, and bacterial degradation",
+      "High biostability preventing rancidity and unpleasant odors during downtime",
+      "Excellent surface finish and prolonged tooling life",
+      "Low foaming tendency even under high-pressure coolant delivery",
+      "Rapid heat dissipation from the cutting zone"
+    ],
+    "specsTable": [
+      {
+        "label": "Viscosity Grade / Standard",
+        "val": "20-150-001.I"
+      },
+      {
+        "label": "Appearance",
+        "val": "Amber fluid forming milky emulsion"
+      },
+      {
+        "label": "Emulsion Stability (5% in water)",
+        "val": "Passes 24h stability test"
+      },
+      {
+        "label": "Cast Iron Corrosion Test",
+        "val": "Nil (Zero rust at 1:20)"
+      },
+      {
+        "label": "Recommended Dilution",
+        "val": "3% to 5% (1:20 - 1:30)"
+      }
+    ]
+  },
+  {
+    "id": "straight-cut-oil",
+    "name": "Straight / Neat Cutting Oil",
+    "brand": "KEMBOT FIN-MB, FIN-CB, FIN-SB",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "IS-3065-1985 (Types I, II, III)",
+    "equivalent": "TRIMOFFIN / NORCAM / SERVOCUT / ILOCUT SERIES (51-945)",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Heavy-duty non-emulsifiable straight cutting fluid for precision machining operations.",
+    "description": "Kembot Neat Cutting Oils (FIN Series) are blended from select solvent-refined mineral oils fortified with fatty oils, extreme-pressure chlor-sulfur compounds, and anti-mist agents to meet demanding machining operations.",
+    "applications": [
+      "Recommended for operations like deep hole drilling, free cutting, broaching, gear hobbing, tapping, and threading.",
+      "Suitable for alloy steels, stainless steel, and high-tensile metals.",
+      "Note: Sulphurised grades (FIN-SB) are optimized for ferrous alloys and not recommended for active copper/non-ferrous alloys."
+    ],
+    "usageGuide": "Use undiluted directly in dedicated cutting oil reservoirs and flood lubrication setups on automatics, gear shapers, and broaching machines.",
+    "features": [
+      "Maximum boundary lubrication and EP lubricity preventing chip welding",
+      "Extended cutting tool durability and razor-sharp edge retention",
+      "Superior surface finish with ultra-low tolerances",
+      "Anti-mist properties ensuring cleaner workshop air quality",
+      "High flash point for maximum workplace safety"
+    ],
+    "specsTable": [
+      {
+        "label": "Specification Standard",
+        "val": "IS-3065-1985"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "15 – 32 cSt (Grade Dependent)"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 160 °C"
+      },
+      {
+        "label": "Copper Corrosion",
+        "val": "Class 1a (Non-active) / Class 4a (Active)"
+      },
+      {
+        "label": "EP Additive Type",
+        "val": "Chlorinated / Sulphurized Fatty Esters"
+      }
+    ]
+  },
+  {
+    "id": "white-oils",
+    "name": "White Oils (Technical & Pharma Grade)",
+    "brand": "KEMBOT WHITE - A / KEMBOT WHITE - B",
+    "category": "Specialties",
+    "categorySlug": "specialties.html",
+    "spec": "Technical / Liquid Paraffin Standards",
+    "equivalent": "Meets All Premium Refined White Oil Specifications",
+    "packaging": "20L, 210L Drums, ISO Tankers",
+    "image": "images/product-bottle.png",
+    "tagline": "Highly refined, odorless, tasteless, and chemically inert mineral white oils.",
+    "description": "Kembot White Oils are severely hydro-treated, ultra-pure paraffinic oils free from aromatic hydrocarbons, sulfur, nitrogen compounds, and heavy metals, offering exceptional color stability and inertness.",
+    "applications": [
+      "Polymer processing, plasticizer in polystyrene, thermoplastic elastomers, and adhesives.",
+      "Lubrication of precision textile machinery and food-packaging auxiliary equipment.",
+      "Formulation of cosmetics, protective coatings, and industrial specialty chemicals."
+    ],
+    "usageGuide": "Apply directly as a processing oil, batching ingredient, or non-staining lubricant according to technical formulations.",
+    "features": [
+      "Crystal clear water-white appearance (Saybolt color +30)",
+      "Completely odorless, tasteless, and non-staining",
+      "High UV resistance and thermal stability against discoloration",
+      "Chemically inert and hydrophobic moisture barrier"
+    ],
+    "specsTable": [
+      {
+        "label": "Color (Saybolt)",
+        "val": "+30 (Water White)"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "12 – 68 cSt"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 180 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -9 °C"
+      },
+      {
+        "label": "Purity Test",
+        "val": "Free from fluorescent additives"
+      }
+    ]
+  },
+  {
+    "id": "hydraulic-oils",
+    "name": "Hydraulic Oils (Standard Anti-Wear)",
+    "brand": "KEMBOT HYDRA 32, 46, 68, 100, 150, 220, 320, 460",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "IS 10522 / DIN 51524 Part 1",
+    "equivalent": "SERVO SYSTEM / ENCLO / HYDROL / PERFECT O SERIES",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "High-reliability anti-wear and anti-foam hydraulic oils for modern power transmission.",
+    "description": "Kembot Hydra oils are premium heavy-duty hydraulic power transmission fluids blended with solvent refined base stocks, anti-wear zinc additives, corrosion inhibitors, and foam suppressants.",
+    "applications": [
+      "Hydraulic systems of plastic injection molding machines, presses, machine tools, and construction equipment.",
+      "Enclosed industrial gearboxes, vane pumps, piston pumps, and circulating systems.",
+      "Industrial air compressors and lightly loaded circulating bearings."
+    ],
+    "usageGuide": "Select the appropriate ISO VG grade (32, 46, 68 for general hydraulics; 100 to 460 for heavy circulating systems and machine gearings) per equipment OEM recommendations.",
+    "features": [
+      "High anti-wear performance preventing pump cavitation and vane scuffing",
+      "Excellent demulsibility for fast water separation",
+      "Robust anti-foam and air release characteristics",
+      "Strong thermal stability reducing sludge and varnish deposits",
+      "Full seal compatibility with nitrile, viton, and silicone elastomers"
+    ],
+    "specsTable": [
+      {
+        "label": "Specification Standard",
+        "val": "IS 10522-1983 / DIN 51524 Part 1"
+      },
+      {
+        "label": "ISO Viscosity Grades",
+        "val": "32, 46, 68, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 95"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "200 °C – 250 °C"
+      },
+      {
+        "label": "Rust Test (D-665A)",
+        "val": "Pass"
+      }
+    ]
+  },
+  {
+    "id": "hydraulic-oils-hlp",
+    "name": "Hydraulic Oils HLP Series",
+    "brand": "KEMBOT HYDRA - HLP SERIES 32, 46, 68, 100, 150, 220, 320, 460",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "IS 11656-1986, DIN 51524 Part 2 (HLP), Cincinnati Milacron P-68/P-69/P-70",
+    "equivalent": "SERVO SYSTEM HLP / ENCLO HLP / HYDROL HLP SERIES",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "High-performance premium HLP hydraulic fluid for high-pressure electro-hydraulic systems.",
+    "description": "Kembot Hydra HLP oils are advanced premium-performance anti-wear hydraulic oils engineered for severe operating conditions with high pressures, precision servo-valves, and extreme temperature fluctuations.",
+    "applications": [
+      "High-pressure hydrostatic and hydrodynamic hydraulic systems operating above 250 bar.",
+      "CNC machine tools, robotics, electro-hydraulic proportional valves, and injection molding machinery.",
+      "Mobile hydraulic equipment, excavators, and industrial automation."
+    ],
+    "usageGuide": "Fill directly into clean hydraulic reservoirs. Compatible with standard mineral hydraulic oils; filters down to 3 microns without additive depletion.",
+    "features": [
+      "Meets Cincinnati Milacron P-68, P-69, P-70 and DIN 51524 Part 2 HLP specs",
+      "Extreme thermal-oxidative stability for 5000+ operating hours",
+      "Rapid air release and anti-cavitation protection",
+      "Superior wet filterability preventing valve sticking",
+      "Exceptional multi-metal anti-wear protection (copper, bronze, steel)"
+    ],
+    "specsTable": [
+      {
+        "label": "Specification Standards",
+        "val": "IS 11656-1986 / DIN 51524 Part 2 / Cincinnati P-68,69,70"
+      },
+      {
+        "label": "Available ISO VG",
+        "val": "32, 46, 68, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "FZG Gear Test (Failure Load)",
+        "val": "> Stage 12"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 100"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -21 °C"
+      }
+    ]
+  },
+  {
+    "id": "engine-oils-linear",
+    "name": "Engine Oils (Linear / Monograde)",
+    "brand": "KEMBOT LUBE 30, 40, 50",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "API CF/SF, IS 13656-2002 EDL-2",
+    "equivalent": "HYLUBE MILCY / SERVO PRIDE / ACTUMA ULTRA SERIES",
+    "packaging": "1L, 5L, 20L, 50L, 210L",
+    "image": "images/product-bottle.png",
+    "tagline": "Heavy-duty monograde diesel and gasoline engine oils for commercial vehicles and stationary gensets.",
+    "description": "Kembot Lube monograde engine oils are formulated with high-viscosity index virgin paraffinic base stocks and detergent-dispersant additive chemistry to protect diesel and petrol engines.",
+    "applications": [
+      "Naturally aspirated and turbocharged heavy-duty diesel engines in trucks, buses, tractors, and construction machinery.",
+      "Stationary diesel generator sets, agricultural pump sets, and marine auxiliary engines.",
+      "Transmission and hydraulic systems where monograde engine oils are specified by the OEM."
+    ],
+    "usageGuide": "Choose SAE 30 for moderate ambient climates or hydraulic gear uses, SAE 40 for general heavy duty running, and SAE 50 for high ambient temperature applications.",
+    "features": [
+      "Superior wear protection for pistons, liners, cams, and bearings",
+      "Exceptional deterrence controlling soot, carbon, and sludge build-up",
+      "High thermal stability preventing oil thickening at high operating temperatures",
+      "Excellent shear stability maintaining constant lubricating film",
+      "Reduced oil consumption and low top-up requirements"
+    ],
+    "specsTable": [
+      {
+        "label": "SAE Viscosity Grades",
+        "val": "SAE 30, SAE 40, SAE 50"
+      },
+      {
+        "label": "Performance Standards",
+        "val": "API CF / SF, MIL-L-2104C"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "val": "SAE 30: 11.5 | SAE 40: 14.8 | SAE 50: 18.5 cSt"
+      },
+      {
+        "label": "Total Base Number (TBN)",
+        "val": "Min. 10.0 mg KOH/g"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 220 °C"
+      }
+    ]
+  },
+  {
+    "id": "gear-oils",
+    "name": "Industrial Gear Oils & Gear EP Series",
+    "brand": "KEMBOT GEAR / GEAR EP SERIES 90, 140, 220, 320, 460",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "IS 8489-1989 (EP Type), DIN 51517 Part 3 (CLP), AGMA 9005-E02",
+    "equivalent": "SERVO GEAR SUPER / SPIROL EP SERIES",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Extreme pressure industrial gear lubricants engineered for heavy shock loads.",
+    "description": "Kembot Gear EP Series oils are formulated from solvent-extracted high VI base oils combined with sulfur-phosphorus extreme pressure additives that impart exceptional load carrying and anti-scuffing capabilities.",
+    "applications": [
+      "Enclosed spur, helical, bevel, spiral, and planetary industrial gearboxes.",
+      "Heavy load applications in steel mills, cement plants, mining crushers, paper machines, and sugar mills.",
+      "Plain and antifriction roller bearings subjected to severe shock loads (operating temp up to 90 °C)."
+    ],
+    "usageGuide": "Select viscosity grade based on gearbox reduction ratio, operating speed, and temperature. Maintain sump levels per sight glass indicator.",
+    "features": [
+      "Outstanding Extreme-Pressure (EP) protection against micropitting and tooth scuffing",
+      "Excellent thermal and oxidation stability preventing sludge formation",
+      "Non-corrosive to yellow metals (bronze, brass, copper)",
+      "High demulsibility ensuring rapid separation from free water",
+      "Superior anti-foam and anti-rust protection"
+    ],
+    "specsTable": [
+      {
+        "label": "Performance Standard",
+        "val": "IS 8489-1989 / DIN 51517 Part 3 (CLP) / AGMA 9005-E02"
+      },
+      {
+        "label": "Available Grades",
+        "val": "VG 90, 140, 220, 320, 460"
+      },
+      {
+        "label": "Timken OK Load",
+        "val": "Min. 60 lbs (27 kg)"
+      },
+      {
+        "label": "FZG Gear Test (A/8.3/90)",
+        "val": "Failure Stage > 12"
+      },
+      {
+        "label": "4-Ball Weld Load",
+        "val": "> 250 kgf"
+      }
+    ]
+  },
+  {
+    "id": "hone-flush-oil",
+    "name": "Hone Flush Oil & SPL",
+    "brand": "KEMBOT HONE FLUSH / KEMBOT HONE FLUSH SPL",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "Kembot Hone 480, 980, 981 Series",
+    "equivalent": "SERVO HONE 7, CASTROL HONILO - 480, 980, 981 SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Ultra-low viscosity honing fluid with superior flushing action and stone life extension.",
+    "description": "Kembot Hone Flush is a highly refined low-viscosity specialty oil containing active lubricity enhancers, wetting agents, and anti-weld additives for superfinishing and honing operations.",
+    "applications": [
+      "Honing and superfinishing of engine cylinder liners, bearing races, hydraulic cylinders, and precision tubes.",
+      "Machining, turning, drilling, and tapping of aluminum alloys and ferrous metals.",
+      "Flushing of swarf and abrasive grit in precision grinding machines."
+    ],
+    "usageGuide": "Use neat via continuous circulation flooding the honing stones and contact zone. Compatible with magnetic swarf separators and cartridge filtration systems.",
+    "features": [
+      "Outstanding flushing power preventing honing stone loading and glazing",
+      "Promotes clean, uniform cross-hatch surface finish (low Ra values)",
+      "Low odor and ultra-low misting formulation for operator health and safety",
+      "High flash point reducing fire risk in high-speed reciprocating heads",
+      "Non-staining to sensitive aluminum and yellow metal alloys"
+    ],
+    "specsTable": [
+      {
+        "label": "Grade / Variant",
+        "val": "Hone Flush 480 / 980 / 981"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "4.0 – 6.5 cSt"
+      },
+      {
+        "label": "Flash Point (PMCC)",
+        "val": "> 125 °C"
+      },
+      {
+        "label": "Copper Strip Corrosion",
+        "val": "Class 1a (Non-corrosive)"
+      },
+      {
+        "label": "Density @ 29.5°C",
+        "val": "0.820 – 0.840 g/cm³"
+      }
+    ]
+  },
+  {
+    "id": "spindle-oils",
+    "name": "Spindle Oils (High Speed)",
+    "brand": "KEMBOT SPIN 2, 5, 10, 12, 15, 22",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "VG 2, 5, 10, 12, 15, 22 / IS 493 Part 1",
+    "equivalent": "SERVO SPIN / HYDROL / SPINTEX SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-bottle.png",
+    "tagline": "Low-viscosity premium oils for high-speed textile and machine tool spindles.",
+    "description": "Kembot Spin oils are ultra-light viscosity lubricating oils processed from hydrofinished paraffinic base stocks with anti-oxidants, anti-rust, and lubricity film improvers designed for tight-clearance spindle bearings.",
+    "applications": [
+      "High-speed spindles in textile ring spinning, twisting, and winding machines.",
+      "Precision grinding machine spindles, CNC engraving heads, and optical tooling.",
+      "Positive displacement blowers, timing mechanisms, and low-pressure precision hydraulics."
+    ],
+    "usageGuide": "Fill spindle reservoirs and oil cups. Ensure clean filtration to maintain ultra-smooth spindle rotation up to 30,000+ RPM.",
+    "features": [
+      "Extremely low viscosity minimizing frictional heat and power consumption",
+      "Prevents spindle chatter, vibration, and bearing wear at high RPMs",
+      "Superior oxidation resistance avoiding gumming and lacquer deposits",
+      "Non-staining formulation protecting yarn and fabrics in textile mills",
+      "Excellent rust and moisture protection during machine downtime"
+    ],
+    "specsTable": [
+      {
+        "label": "ISO VG Grades",
+        "val": "VG 2, 5, 10, 12, 15, 22"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 90"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "110 °C – 170 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -12 °C"
+      },
+      {
+        "label": "Corrosion Protection",
+        "val": "Passes IS 493 24h Rust Test"
+      }
+    ]
+  },
+  {
+    "id": "machinery-oils",
+    "name": "Machinery Oils (General Lubrication)",
+    "brand": "KEMBOT LINE 32, 46, 68, 100, 150, 220, 320, 460",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "VG 32 to 460 / IS 493 Part 1",
+    "equivalent": "SERVO LINE / CABOL / YANTHROL SERIES J",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "All-purpose industrial machinery and line lubrication oils for general manufacturing equipment.",
+    "description": "Kembot Line oils are economical, high-quality general-purpose machinery lubricating oils formulated with refined straight-run base stocks with good natural lubricity, chemical stability, and film strength.",
+    "applications": [
+      "Textile looms, spinning frames, paper mills, and printing press plain bearings.",
+      "Open and semi-enclosed bearing journals, hand-oiled pivots, slides, and linkages.",
+      "Air compressors, vacuum pumps, and lightly loaded industrial chain drives."
+    ],
+    "usageGuide": "Apply via drip-feed oilers, manual oil cans, total-loss oiling systems, or continuous centralized lubrication systems.",
+    "features": [
+      "Good film strength providing continuous wear barrier on metal contacts",
+      "High natural chemical stability preventing rapid thickening",
+      "Protects iron and steel machinery components from atmospheric rust",
+      "Economical and versatile across broad multi-machine industrial plants",
+      "Wide viscosity spectrum from ISO VG 32 to ISO VG 460"
+    ],
+    "specsTable": [
+      {
+        "label": "ISO Viscosity Range",
+        "val": "VG 32, 46, 68, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "Specification Standard",
+        "val": "IS 493 (Part 1) - 1981"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 85"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 190 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -6 °C"
+      }
+    ]
+  },
+  {
+    "id": "loom-oils",
+    "name": "Loom Oils (Textile Machinery)",
+    "brand": "KEMBOT TEX 100, 150",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "Tex 100, Tex 150 / Textile Scourable Grade",
+    "equivalent": "SERVO LOOM SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-bottle.png",
+    "tagline": "Special non-drip, scourable lubricant for high-speed textile looms and weaving machinery.",
+    "description": "Kembot Tex Loom oils are specifically engineered for textile weaving machines with adhesive tackiness additives and scourable surfactants to eliminate oil splashing and allow easy washing if fabric contact occurs.",
+    "applications": [
+      "Lubrication of picking motions, cams, shuttle boxes, harnesses, and crankshaft bearings on textile looms (Sulzer, Dornier, Rapier, Air-jet, and shuttle looms).",
+      "Knitting machines, spinning frames, and carding machine sliding parts."
+    ],
+    "usageGuide": "Apply through centralized one-shot lubrication systems or manual oiling cups on weaving looms.",
+    "features": [
+      "Non-drip adhesive polymer prevents oil splatter onto woven fabric",
+      "Easily scourable: stains wash off cleanly with conventional textile washing detergents",
+      "High load-carrying capacity minimizing wear on picking cams and slide guides",
+      "Excellent rust prevention in humid weaving shed environments",
+      "Smooth machine operation with reduced vibration and energy drag"
+    ],
+    "specsTable": [
+      {
+        "label": "Available Grades",
+        "val": "Kembot Tex 100, Tex 150"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "95 – 155 cSt"
+      },
+      {
+        "label": "Scourability Test",
+        "val": "Complete removal from cotton/synthetic cloth"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 210 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -9 °C"
+      }
+    ]
+  },
+  {
+    "id": "quenching-oil",
+    "name": "Quenching Oils (Heat Treatment)",
+    "brand": "KEMBOT QUENCH SERIES",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "IS 2664-1980 (Straight & Accelerated Grades)",
+    "equivalent": "SERVO QUENCH / THERMOL / META QUENCH SERIES",
+    "packaging": "20L, 210L Drums, Bulk Tankers",
+    "image": "images/product-drum.png",
+    "tagline": "Controlled cooling rate quenching oils for optimum metallurgical hardness and zero cracking.",
+    "description": "Kembot Quench Series oils are specialized heat treatment fluids formulated from high thermal-stability paraffinic base oils combined with wetting acceleration additives that provide fast, uniform cooling.",
+    "applications": [
+      "Hardening of alloy steel gears, automotive components, crankshafts, and fasteners.",
+      "Quenching of high-speed tool steel ball bearings, forging dies, and metal stampings.",
+      "Normal and accelerated quenching in open batch baths and continuous furnace tanks."
+    ],
+    "usageGuide": "Maintain bath temperature between 40 °C to 70 °C with proper agitation to avoid localized hot spots and ensure uniform metallurgical grain structure.",
+    "features": [
+      "Fast vapor stage dissipation ensuring uniform martensitic hardening without soft spots",
+      "High thermal oxidation stability minimizing sludge accumulation and bath thickening",
+      "Low drag-out loss on finished components reducing operational oil consumption",
+      "High flash and fire point ensuring maximum safety in commercial heat treatment plants",
+      "Delivers clean, bright, stain-free metal components post-quench"
+    ],
+    "specsTable": [
+      {
+        "label": "Performance Standard",
+        "val": "IS 2664-1980"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "22 – 32 cSt"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 200 °C"
+      },
+      {
+        "label": "Quench Speed (Nickel Ball)",
+        "val": "10 to 14 seconds (Accelerated)"
+      },
+      {
+        "label": "Insolubles / Sludge Tendency",
+        "val": "Extremely low"
+      }
+    ]
+  },
+  {
+    "id": "thermic-oil",
+    "name": "Thermic Oils (Heat Transfer Fluids)",
+    "brand": "KEMBOT THERM SERIES",
+    "category": "Industrial Oil",
+    "categorySlug": "industrial-oil.html",
+    "spec": "Thermic Fluid Standard / DIN 51522",
+    "equivalent": "HYTHERM / SERVO THERM / THERMOL SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "High thermal stability heat transfer fluid for closed loop heating systems up to 320 °C.",
+    "description": "Kembot Therm series oils are severe hydro-cracked mineral heat transfer media with high specific heat and thermal conductivity, delivering trouble-free indirect process heating.",
+    "applications": [
+      "Closed loop, indirect, liquid-phase heat transfer systems in chemical, textile, plywood, food, and pharmaceutical industries.",
+      "Jacketed reactors, bitumen heating tanks, drying ovens, and heat exchangers."
+    ],
+    "usageGuide": "Operate with positive nitrogen blanketing on expansion tank for best service life. Maximum bulk oil temp: 300 – 320 °C; maximum film temp: 340 °C.",
+    "features": [
+      "Exceptional resistance to thermal cracking and oxidation prevents carbon deposits on heater tubes",
+      "High heat transfer coefficient for optimal energy efficiency and lower fuel costs",
+      "Low vapor pressure minimizing system pressure build-up and pump cavitation",
+      "Non-corrosive to steel and standard heat transfer pipework",
+      "Long operational lifespan with minimal top-up requirements"
+    ],
+    "specsTable": [
+      {
+        "label": "Max Bulk Oil Temperature",
+        "val": "300 °C – 320 °C"
+      },
+      {
+        "label": "Max Film Temperature",
+        "val": "340 °C"
+      },
+      {
+        "label": "Kinematic Viscosity @ 40°C",
+        "val": "30 – 34 cSt"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 215 °C"
+      },
+      {
+        "label": "Auto-Ignition Temp",
+        "val": "> 350 °C"
+      }
+    ]
+  },
+  {
+    "id": "pneumatic-oils",
+    "name": "Pneumatic Tool & Rock Drill Oils",
+    "brand": "KEMBOT PNEUMO 46, 100, 150, 220, 320, 460",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "VG 46, 100, 150, 220, 320, 460",
+    "equivalent": "PNEUMATIC 100, SERVO PNEUM 100, METAMOL R100",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Heavy-duty extreme pressure pneumatic tool lubricants with moisture emulsifying agents.",
+    "description": "Kembot Pneumo series oils are formulated specifically for air-operated percussive and rotary tools where air expansion causes severe chilling and condensed moisture.",
+    "applications": [
+      "Pneumatic equipment like rock drills, jack hammers, paving breakers, chippers, rivet guns, and air grinders.",
+      "Underground mining, tunneling, quarrying, and civil construction air tools.",
+      "In-line lubricators and airline mist injection systems."
+    ],
+    "usageGuide": "Fill airline lubricator bottles or inject directly into the tool inlet before operation.",
+    "features": [
+      "Emulsifies compressed air moisture to prevent water wash-off and internal corrosion",
+      "Extreme pressure (EP) additives protect reciprocating pistons and rifle bars from seizure",
+      "Excellent atomization and misting capability for complete interior component wetting",
+      "Tacky adhesive film prevents blow-off under pulsating air blasts",
+      "Maintains fluid flow without freezing at low exhaust temperatures"
+    ],
+    "specsTable": [
+      {
+        "label": "Viscosity Grades",
+        "val": "VG 46, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 200 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -18 °C"
+      },
+      {
+        "label": "4-Ball EP Weld Load",
+        "val": "> 200 kg"
+      },
+      {
+        "label": "Emulsion Tendency",
+        "val": "Readily forms protective emulsion with moisture"
+      }
+    ]
+  },
+  {
+    "id": "way-oils",
+    "name": "Slideway Oils (Way Lubricants)",
+    "brand": "KEMBOT WAY 32, 46, 68, 100, 150, 220, 320, 460",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "VG 32 to 460 / DIN 51502 CGLP / ISO 19378",
+    "equivalent": "SERVO WAY / METAMOL / WAYLUBE / MAGNA-BD SERIES",
+    "packaging": "20L, 50L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Anti-stick-slip slideway lubricants for precision CNC and machine tool guide rails.",
+    "description": "Kembot Way oils are specially developed for the lubrication of horizontal and vertical machine tool slideways, guides, and feed mechanisms to eliminate jerky motion (stick-slip).",
+    "applications": [
+      "Slideways, guideways, and carriages of planers, grinders, horizontal boring machines, shapers, milling machines, and CNC machining centers.",
+      "Combined machine tool hydraulic and slideway systems.",
+      "Vertical columns and heavy-duty slide tables."
+    ],
+    "usageGuide": "Apply via automated centralized slideway lubrication timers or manual oil dispensers. Compatible with synthetic and water-based cutting coolants.",
+    "features": [
+      "Eliminates stick-slip ensuring micro-positioning accuracy and mirror-like surface finishes",
+      "Strong tackiness additives prevent oil run-off from vertical ways",
+      "Excellent demulsibility and resistance to washing away by water-soluble cutting coolants",
+      "Protects against rust, corrosion, and wear on cast iron and synthetic slideway liners (Turcite)",
+      "High film strength withstanding heavy table loads without boundary breakdown"
+    ],
+    "specsTable": [
+      {
+        "label": "Performance Standard",
+        "val": "DIN 51502 CGLP / ISO 6743-13 L-G"
+      },
+      {
+        "label": "Available ISO VG",
+        "val": "32, 46, 68, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "Stick-Slip Ratio",
+        "val": "< 0.8 (Excellent smooth motion)"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 210 °C"
+      },
+      {
+        "label": "Rust Test (24h)",
+        "val": "Pass"
+      }
+    ]
+  },
+  {
+    "id": "press-oils",
+    "name": "Press Oils (Metal Stamping & Drawing)",
+    "brand": "KEMBOT PRESS 32, 46, 68, 100, 150, 220, 320, 460",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "VG 32, 46, 68, 100, 150, 220, 320, 460",
+    "equivalent": "SERVO PRESS SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Heavy-duty press and deep drawing lubricants providing extreme pressure die protection.",
+    "description": "Kembot Press series lubricants are formulated with high-film base oils and boundary/EP additives designed for sheet metal pressing, deep drawing, blanking, and punching.",
+    "applications": [
+      "Automotive body panel pressing, appliance stamping, and deep drawing of mild and alloy steels.",
+      "Heavy hydraulic press column and mechanical press crank lubrication.",
+      "Punching, perforating, and fine-blanking operations."
+    ],
+    "usageGuide": "Apply neat by roller coater, spray nozzles, or drip applicator onto sheet metal blanks prior to entering the press tooling.",
+    "features": [
+      "High lubricity preventing die galling, tearing, and metal pickup",
+      "Exceptional film strength under immense multi-ton stamping pressures",
+      "Easy degreasing and cleaning with standard alkaline wash baths",
+      "Non-staining to sheet metal surfaces with temporary in-process rust protection",
+      "Increases die and punch life significantly between regrinding"
+    ],
+    "specsTable": [
+      {
+        "label": "ISO VG Grades",
+        "val": "32, 46, 68, 100, 150, 220, 320, 460"
+      },
+      {
+        "label": "EP Additive Chemistry",
+        "val": "High Load Polymeric & Ester Blend"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 220 °C"
+      },
+      {
+        "label": "Cleaning Compatibility",
+        "val": "Easily removed with warm alkaline wash"
+      },
+      {
+        "label": "Copper Corrosion",
+        "val": "Non-corrosive"
+      }
+    ]
+  },
+  {
+    "id": "glass-cutting-oils",
+    "name": "Glass Cutting Oil",
+    "brand": "KEMBOT GLASS CUTTING OIL",
+    "category": "Specialties",
+    "categorySlug": "specialties.html",
+    "spec": "Meets All Premium Glass Industry Standards",
+    "equivalent": "Meets All Other Reputed Brand Specs (Acecut, Silberschnitt, etc.)",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-bottle.png",
+    "tagline": "Specialized low-viscosity cutting fluid for precision flat, float, and automotive glass cutting.",
+    "description": "Kembot Glass Cutting Oil is a formulated, low-viscosity, controlled-evaporation fluid designed specifically for automated and manual glass scoring and cutting wheels.",
+    "applications": [
+      "Cutting of high-thickness flat glass sheets, float glass lines, and architectural glass.",
+      "Automotive windshield and mirror precision scoring.",
+      "Automated CNC glass cutting tables and manual hand cutting wheels."
+    ],
+    "usageGuide": "Feed through automatic cutting wheel dispensers or reservoir cutter heads.",
+    "features": [
+      "Binds glass micro-debris and chips preventing surface scratching and tool jamming",
+      "Significantly reduces scoring pressure and provides a smooth, defect-free break edge",
+      "Controlled volatility: evaporates cleanly leaving no sticky residue before washing",
+      "Low odor, non-toxic, and skin-friendly for workshop technicians",
+      "Extends cutting wheel carbide service life"
+    ],
+    "specsTable": [
+      {
+        "label": "Appearance",
+        "val": "Clear, water-white fluid"
+      },
+      {
+        "label": "Kinematic Viscosity @ 20°C",
+        "val": "1.8 – 2.8 cSt"
+      },
+      {
+        "label": "Evaporation Rate",
+        "val": "Controlled, residue-free"
+      },
+      {
+        "label": "Flash Point",
+        "val": "> 70 °C"
+      },
+      {
+        "label": "Residue on Glass",
+        "val": "Nil (Washes clean in cold water)"
+      }
+    ]
+  },
+  {
+    "id": "transformer-oils",
+    "name": "Transformer Oils (Electrical Insulating)",
+    "brand": "KEMBOT TF OILS",
+    "category": "Specialties",
+    "categorySlug": "specialties.html",
+    "spec": "IS-335: 2018 / IEC 60296",
+    "equivalent": "Meets IS-335 Specifications / Reputed Insulating Oils",
+    "packaging": "210L Epoxy-Coated Drums, Dedicated Tankers",
+    "image": "images/product-drum.png",
+    "tagline": "Ultra-pure uninhibited dielectric insulating oil for power and distribution transformers.",
+    "description": "Kembot TF Transformer Oil is a highly refined naphthenic/paraffinic mineral insulating oil possessing superior dielectric properties, high breakdown voltage, and excellent heat dissipation.",
+    "applications": [
+      "Power transformers, distribution transformers, switchgear, and circuit breakers.",
+      "Capacitors, tap-changers, and high-voltage electrical bushings.",
+      "Industrial substation and grid transformers."
+    ],
+    "usageGuide": "Filter and vacuum dehydrate prior to filling transformers. Test dielectric breakdown voltage (BDV) per IS-335 before commissioning.",
+    "features": [
+      "High dielectric breakdown voltage (BDV > 70 kV post-filtration)",
+      "Low dielectric dissipation factor (tan delta) ensuring minimal power loss",
+      "Excellent cooling efficiency via rapid convection circulation",
+      "Zero corrosive sulfur (ASTM D1275B & DIN 51353 compliant)",
+      "High oxidation resistance preventing sludge formation on transformer coils"
+    ],
+    "specsTable": [
+      {
+        "label": "Specification Standard",
+        "val": "IS 335: 2018 / IEC 60296"
+      },
+      {
+        "label": "Breakdown Voltage (BDV)",
+        "val": "> 70 kV (After filtration)"
+      },
+      {
+        "label": "Dielectric Dissipation (Tan Delta @ 90°C)",
+        "val": "< 0.002"
+      },
+      {
+        "label": "Flash Point (PMCC)",
+        "val": "> 140 °C"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -30 °C"
+      }
+    ]
+  },
+  {
+    "id": "freeze-oils",
+    "name": "Freeze Oils (Refrigeration Compressor)",
+    "brand": "KEMBOT FREEZE 32, 46, 57, 68",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "VG 32, 46, 57, 68 / DIN 51503 (KAA / KC)",
+    "equivalent": "SERVO FREEZ / FREEZOL SERIES",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-bottle.png",
+    "tagline": "Low pour point refrigeration compressor oils for CFC, HCFC, and ammonia chillers.",
+    "description": "Kembot Freeze oils are specially refined wax-free naphthenic oils designed for the lubrication of refrigeration and air conditioning compressors operating at sub-zero evaporator temperatures.",
+    "applications": [
+      "Industrial refrigeration compressors in cold storage plants, ice factories, and dairies using Ammonia (R717) or Freon refrigerants.",
+      "Commercial HVAC chillers, food freezing tunnels, and transport refrigeration."
+    ],
+    "usageGuide": "Ensure strict moisture-free handling. Fill into clean, evacuated refrigeration compressor sumps.",
+    "features": [
+      "Extremely low pour point and wax-free composition preventing flocculation in expansion valves",
+      "High chemical stability in the presence of refrigerants at high discharge temperatures",
+      "Low foaming tendency in reciprocating and rotary screw compressors",
+      "Excellent thermal shock breaking and lubricity"
+    ],
+    "specsTable": [
+      {
+        "label": "Viscosity Grades",
+        "val": "Kembot Freeze 32, 46, 57, 68"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -36 °C to -42 °C"
+      },
+      {
+        "label": "Floc Point (R-12)",
+        "val": "< -50 °C"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 185 °C"
+      },
+      {
+        "label": "Dielectric Strength",
+        "val": "> 30 kV"
+      }
+    ]
+  },
+  {
+    "id": "edm-oil",
+    "name": "EDM Oil (Spark Erosion Fluid)",
+    "brand": "KEMBOT EDM SERIES",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "Meets All Modern EDM Die-Sinking Standards",
+    "equivalent": "MEETS ALL OTHER REPUTED BRAND SPECS",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-bottle.png",
+    "tagline": "Ultra-pure hydrocarbon dielectric fluid for high-precision spark erosion die sinking.",
+    "description": "Kembot EDM Series is an ultra-pure synthetic-grade dielectric fluid formulated with narrow boiling range hydrocarbons for electrical discharge machining (EDM).",
+    "applications": [
+      "Roughing and high-precision finishing operations on all EDM die-sinking machines (Charmilles, Makino, Mitsubishi, Sodick).",
+      "Precision tool and mold manufacturing, aerospace components, and micro-machining."
+    ],
+    "usageGuide": "Fill EDM dielectric tanks. Ensure continuous circulation through paper cartridge filters for swarf removal.",
+    "features": [
+      "High dielectric strength with rapid spark deionization for faster cutting rates",
+      "Superior flushing ability washing carbon particles cleanly out of spark gaps",
+      "High flash point (> 100 °C) providing elevated operator and workshop fire safety",
+      "Extremely low aromatic content, odorless, non-toxic, and non-irritating",
+      "Zero electrode wear and mirror cavity surface finish"
+    ],
+    "specsTable": [
+      {
+        "label": "Dielectric Strength",
+        "val": "> 45 kV"
+      },
+      {
+        "label": "Kinematic Viscosity @ 20°C",
+        "val": "2.8 – 3.4 cSt"
+      },
+      {
+        "label": "Flash Point (PMCC)",
+        "val": "> 105 °C"
+      },
+      {
+        "label": "Aromatic Content",
+        "val": "< 0.1 % (Ultra-Pure)"
+      },
+      {
+        "label": "Color",
+        "val": "Crystal Clear Water-White"
+      }
+    ]
+  },
+  {
+    "id": "auto-special",
+    "name": "Auto Special Fluids & Treatments",
+    "brand": "KEMBOT AUTO SPECIAL",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "Meets All Reputed Automotive Special Specifications",
+    "equivalent": "MEETS ALL OTHER REPUTED BRAND SPECS",
+    "packaging": "250ml, 500ml, 1L, 5L, 20L",
+    "image": "images/product-bottle.png",
+    "tagline": "Specialty automotive maintenance fluids, engine flushes, and performance enhancers.",
+    "description": "Kembot Auto Special represents high-performance automotive specialty formulations including concentrated engine flushes, radiator coolants, injector cleaners, and transmission specialty fluids.",
+    "applications": [
+      "Passenger cars, commercial utility vehicles, and heavy fleet maintenance.",
+      "Pre-oil change crankcase cleaning and engine sludge removal.",
+      "Specialty power steering and auxiliary automotive mechanisms."
+    ],
+    "usageGuide": "Follow specific product instructions (e.g., add engine flush before oil drain and idle for 10 minutes).",
+    "features": [
+      "Restores engine cleanliness and optimizes compression",
+      "Dissolves stubborn carbon deposits, gums, and varnish",
+      "Protects internal seals and rubber gaskets against degradation",
+      "Maintains optimal vehicle responsiveness and fuel efficiency"
+    ],
+    "specsTable": [
+      {
+        "label": "Formulation Base",
+        "val": "High Active Detergent & Solvent Blend"
+      },
+      {
+        "label": "Compatibility",
+        "val": "All Mineral & Synthetic Motor Oils"
+      },
+      {
+        "label": "Flash Point",
+        "val": "> 65 °C"
+      },
+      {
+        "label": "Corrosion Test",
+        "val": "Passes Multi-Metal Automotive Test"
+      }
+    ]
+  },
+  {
+    "id": "multi-grade-engine-oil-milby",
+    "name": "Multi Grade Engine Oil (Milby)",
+    "brand": "KEMBOT MILBY 20W/40, 20W/50",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "API CF-4 / SG, IS 13656 EDL-3",
+    "equivalent": "CRB PLUS 20/W/40, CASTROL GTX 20/W/50",
+    "packaging": "1L, 3.5L, 5L, 7.5L, 10L, 20L, 50L, 210L",
+    "image": "images/product-bottle.png",
+    "tagline": "All-weather multigrade diesel and gasoline engine oil for reliable commercial transport.",
+    "description": "Kembot Milby is a premium multigrade crankcase lubricant engineered for heavy-duty diesel engines operating under severe stop-and-go and highway hauling conditions.",
+    "applications": [
+      "Commercial trucks, buses, light commercial vehicles (LCVs), and utility tractors.",
+      "Naturally aspirated and turbocharged diesel engines requiring 20W40 / 20W50 API CF-4.",
+      "Mixed fleet transport operations."
+    ],
+    "usageGuide": "Recommended for oil drain intervals up to 18,000 – 25,000 km depending on engine OEM guidance and duty cycles.",
+    "features": [
+      "Controls soot-induced oil thickening and prevents piston ring sticking",
+      "Excellent all-season viscosity retention with shear-stable polymers",
+      "High TBN reserve neutralizing corrosive combustion acids",
+      "Superior anti-wear protection for valve trains and cylinder liners",
+      "Low oil consumption and extended engine overhaul life"
+    ],
+    "specsTable": [
+      {
+        "label": "SAE Viscosity Grades",
+        "val": "20W-40, 20W-50"
+      },
+      {
+        "label": "API Standards",
+        "val": "API CF-4 / SG / IS 13656 EDL-3"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "val": "14.5 – 19.0 cSt"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 120"
+      },
+      {
+        "label": "TBN",
+        "val": "Min. 9.5 mg KOH/g"
+      }
+    ]
+  },
+  {
+    "id": "multi-grade-diesel-premium",
+    "name": "Premium Multi Grade Diesel Engine Oil (MIL-C)",
+    "brand": "KEMBOT PREMIUM 15W/40 (CF4, CH4, CJ4, CK+ Series)",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "API CK-4 / CJ-4 / CI-4 Plus / CH-4 / CF-4, ACEA E9/E7, MB 228.31, Volvo VDS-4.5",
+    "equivalent": "DEUSOL SUPER / SERVO / MAGNATEC SERIES SERVO PRIDE / GTX EXTRA CF-4 SERIES",
+    "packaging": "1L, 5L, 15L, 20L, 55L, 210L",
+    "image": "images/product-drum.png",
+    "tagline": "Advanced heavy-duty diesel engine oil for modern BS-VI / Euro VI fleets with DPF and SCR.",
+    "description": "Kembot Premium Diesel Engine Oil is a top-tier heavy-duty lubricant formulated with synthetic blend base oils and Low-SAPS additive technology to protect modern emission-controlled diesel engines.",
+    "applications": [
+      "Modern high-speed, 4-stroke heavy-duty diesel engines equipped with EGR, DPF, and SCR emission systems.",
+      "Heavy commercial vehicles (Tata, Ashok Leyland, BharatBenz, Volvo, Scania, MAN).",
+      "Off-highway construction and mining equipment (CAT, Komatsu, JCB, Volvo)."
+    ],
+    "usageGuide": "Enables extended drain intervals up to 50,000+ km in heavy highway long-haul applications with regular oil condition monitoring.",
+    "features": [
+      "Outstanding soot dispersancy preventing abrasive wear and filter plugging",
+      "Advanced Low-SAPS formulation protects Diesel Particulate Filters (DPF) from clogging",
+      "Unrivaled piston deposit control and ring-stick resistance under heavy loads",
+      "Superior shear stability maintaining high oil film strength under severe thermal stress",
+      "Promotes fuel economy and ensures effortless cold-weather engine starts"
+    ],
+    "specsTable": [
+      {
+        "label": "Viscosity Grade",
+        "val": "SAE 15W-40"
+      },
+      {
+        "label": "API Classifications",
+        "val": "CK-4, CJ-4, CI-4 PLUS, CH-4, CF-4"
+      },
+      {
+        "label": "OEM Approvals",
+        "val": "MB 228.31, Volvo VDS-4.5, Cummins CES 20086"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 135"
+      },
+      {
+        "label": "Flash Point",
+        "val": "> 228 °C"
+      }
+    ]
+  },
+  {
+    "id": "4t-motorcycle-oils",
+    "name": "4T / 4T Plus Motorcycle Oils",
+    "brand": "KEMBOT 4T PLUS 10W/30, 10W/40, 20W/40, 20W/50",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "JASO MA2 / API SN / SM / SL",
+    "equivalent": "MAK 4T, SERVO 4T, ACTIVE 4T, IDEMITSU - 4T PLUS",
+    "packaging": "900ml, 1L, 50L, 210L",
+    "image": "images/product-bottle.png",
+    "tagline": "High-performance 3-in-1 protection for motorcycle engine, clutch, and gearbox.",
+    "description": "Kembot 4T Plus is a premium 4-stroke motorcycle engine oil engineered with Synthetic Boosters and Friction Modifiers to deliver high throttle response, clutch grip, and gear protection.",
+    "applications": [
+      "Modern 4-stroke motorcycles, sports bikes, cruisers, and scooters (Hero, Honda, Bajaj, TVS, Yamaha, Royal Enfield, Suzuki, KTM).",
+      "Wet-clutch integrated engine-gearbox-clutch configurations."
+    ],
+    "usageGuide": "Drain old oil completely and refill with recommended grade per motorcycle owner manual (10W30 for modern commuter bikes, 20W50 for cruisers / Royal Enfield).",
+    "features": [
+      "JASO MA2 certification ensures 100% clutch grip without clutch slippage",
+      "Smooth gear shifting and gearbox wear reduction",
+      "Keeps engine cool even in dense city stop-and-go traffic",
+      "High thermal resistance preventing oil degradation at high engine RPMs",
+      "Rapid acceleration and enhanced power output"
+    ],
+    "specsTable": [
+      {
+        "label": "SAE Viscosity Grades",
+        "val": "10W-30, 10W-40, 20W-40, 20W-50"
+      },
+      {
+        "label": "Performance Level",
+        "val": "JASO MA2, API SN / SL"
+      },
+      {
+        "label": "Kinematic Viscosity @ 100°C",
+        "val": "10.5 – 19.5 cSt"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 130"
+      },
+      {
+        "label": "Flash Point (COC)",
+        "val": "> 220 °C"
+      }
+    ]
+  },
+  {
+    "id": "rust-preventive-oil",
+    "name": "Rust Preventive Oils (RPO Series)",
+    "brand": "KEMBOT DW 901(WET), DW 902(DRY), 904, 630, 6304, 274",
+    "category": "Industrial Lubricants",
+    "categorySlug": "industrial-lubricants.html",
+    "spec": "IS 1154 / IS 1153 Dewatering & Non-Dewatering Types",
+    "equivalent": "EQUIVALENT TO OTHER REPUTED BRANDS (Rustlick, Castrol Rustilo)",
+    "packaging": "20L, 210L Drums",
+    "image": "images/product-drum.png",
+    "tagline": "Fast-acting dewatering and dry/wet protective barrier oils for inter-operational and export storage.",
+    "description": "Kembot RPO Series rust preventives are blended with active film-forming additives, moisture-displacing surfactants, and corrosion inhibitors dissolved in volatile hydrocarbon carriers.",
+    "applications": [
+      "Protection of machined metal components, bearing rings, camshafts, fasteners, and sheet metal.",
+      "Export shipping protection and indoor/outdoor warehouse storage.",
+      "Dewatering of components after aqueous machining, grinding, or washing."
+    ],
+    "usageGuide": "Apply by dipping, spraying, or brushing onto clean metal surfaces at ambient temperature. Allow solvent to flash off for 10–15 minutes.",
+    "features": [
+      "Instant dewatering action displacing water drops from metal pores",
+      "Choice of Dry Film (DW 902) or Oily Protective Film (DW 901 / 904)",
+      "Exceptional salt spray and humidity cabinet rust protection (up to 12 - 24 months)",
+      "Easily removable with mild solvents or standard industrial wash cleaners",
+      "Fingerprint neutralization capability on freshly handled precision tools"
+    ],
+    "specsTable": [
+      {
+        "label": "Grades Available",
+        "val": "DW 901 (Wet), DW 902 (Dry), 904, 630, 6304, 274"
+      },
+      {
+        "label": "Film Type",
+        "val": "Ultra-thin dry film / Soft oily film / Waxy"
+      },
+      {
+        "label": "Protection Duration",
+        "val": "6 to 24 months (Grade Dependent)"
+      },
+      {
+        "label": "Salt Spray Test (ASTM B117)",
+        "val": "> 48 to 120 hours"
+      },
+      {
+        "label": "Flash Point",
+        "val": "> 40 °C (Solvent based)"
+      }
+    ]
+  },
+  {
+    "id": "fork-oil",
+    "name": "Front Fork Oils (Suspension Fluid)",
+    "brand": "KEMBOT FORK OILS (5W, 10W, 15W, 20W)",
+    "category": "Automotive Oil",
+    "categorySlug": "automotive-oil.html",
+    "spec": "Premium Motorcycle Fork & Shock Absorber Standards",
+    "equivalent": "EQUIVALENT TO OTHER REPUTED BRANDS (Motul, Servo Fork Oil)",
+    "packaging": "350ml, 500ml, 1L, 20L",
+    "image": "images/product-bottle.png",
+    "tagline": "High-damping hydraulic suspension fluid for smooth road handling and zero foaming.",
+    "description": "Kembot Fork Oil is a high viscosity index hydraulic fluid formulated specifically for motorcycle telescopic forks and shock absorbers.",
+    "applications": [
+      "Front telescopic suspension forks and rear shock absorbers on all two-wheelers.",
+      "Street bikes, off-road motocross motorcycles, and heavy cruisers."
+    ],
+    "usageGuide": "Refill fork legs according to motorcycle manufacturer oil volume specifications (cc / mm height).",
+    "features": [
+      "Consistent damping performance across a wide operating temperature spectrum",
+      "Zero foaming and rapid air release preventing harsh suspension rebound",
+      "Protects internal seals against hardening, shrinking, and leaking",
+      "Superior anti-wear protection for fork slider bushings and damper rods"
+    ],
+    "specsTable": [
+      {
+        "label": "Viscosity Options",
+        "val": "5W (Soft), 10W (Medium), 15W (Firm), 20W (Heavy)"
+      },
+      {
+        "label": "Viscosity Index",
+        "val": "Min. 150"
+      },
+      {
+        "label": "Pour Point",
+        "val": "< -30 °C"
+      },
+      {
+        "label": "Seal Compatibility",
+        "val": "Nitrile, NBR, Viton Fork Seals"
+      }
+    ]
+  },
+  {
+    "id": "industrial-automotive-greases",
+    "name": "Industrial & Automotive Greases",
+    "brand": "AP3, EP2, COPPER, ALVANIA, EP 0, EP00",
+    "category": "Greases",
+    "categorySlug": "greases.html",
+    "spec": "NLGI 00, 0, 1, 2, 3 / IS 7623 / IS 12203",
+    "equivalent": "EQUIVALENT TO OTHER REPUTED BRANDS (Servo Grease, Mobilux, Shell Gadus)",
+    "packaging": "500g, 1kg, 5kg, 18kg Pail, 180kg Drum",
+    "image": "images/product-bottle.png",
+    "tagline": "Heavy-duty lithium, lithium complex, and specialty anti-seize greases.",
+    "description": "Kembot Grease range includes Lithium All-Purpose (AP3), Extreme Pressure (EP2, EP0, EP00), High Temperature Lithium Complex, and Copper Anti-Seize compounds for severe friction and load conditions.",
+    "applications": [
+      "Automotive wheel bearings, chassis lubrication, universal joints, and kingpins.",
+      "Industrial ball and roller bearings, centralized grease systems (EP 0, EP 00).",
+      "High temperature threaded connections, boiler studs, and kiln bearings (Copper Grease)."
+    ],
+    "usageGuide": "Apply with grease gun, mechanical pump, or centralized automatic greasing unit. Do not mix incompatible soap bases.",
+    "features": [
+      "High mechanical stability resisting thinning and leakage under vibration",
+      "Superb water-washout resistance and corrosion protection",
+      "High drop point (> 190 °C for AP3/EP2, > 260 °C for Lithium Complex)",
+      "Extreme pressure load-carrying capacity with 4-Ball weld load > 250 kgf",
+      "Extended re-lubrication intervals reducing downtime"
+    ],
+    "specsTable": [
+      {
+        "label": "Soap Thickener Type",
+        "val": "Lithium Hydroxystearate / Lithium Complex / Copper"
+      },
+      {
+        "label": "NLGI Grades",
+        "val": "NLGI 00, 0, 1, 2, 3"
+      },
+      {
+        "label": "Drop Point",
+        "val": "> 190 °C (Lithium) / > 260 °C (Complex)"
+      },
+      {
+        "label": "Base Oil Viscosity @ 40°C",
+        "val": "150 – 220 cSt"
+      },
+      {
+        "label": "Timken OK Load",
+        "val": "40 – 60 lbs"
+      }
+    ]
+  }
+]

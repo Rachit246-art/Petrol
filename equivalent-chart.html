@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equivalent Chart & Cross Reference | Kembot Petroleum</title>
+    <meta name="description" content="Cross reference equivalent chart for Kembot Petroleum lubricants and market brands HPCL, IOC, BPCL, Servo, Castrol, and Shell.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .chart-section {
+            padding: 4rem 1.5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .filter-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .search-input-box {
+            position: relative;
+            flex: 1;
+            min-width: 280px;
+        }
+        .search-input-box input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 2.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .search-input-box input:focus {
+            border-color: #ff4500;
+        }
+        .search-icon-pos {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+        .category-filter-btn-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .cat-btn {
+            background: #f1f5f9;
+            color: #475569;
+            border: none;
+            padding: 0.6rem 1.1rem;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .cat-btn:hover, .cat-btn.active {
+            background: #ff4500;
+            color: #ffffff;
+        }
+        .chart-table-card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .chart-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 800px;
+        }
+        .chart-table th {
+            background: #0d1e50;
+            color: #ffffff;
+            padding: 1.1rem 1.2rem;
+            font-size: 0.92rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .chart-table td {
+            padding: 1.1rem 1.2rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+        .chart-table tbody tr:hover {
+            background: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <img src="images/logo.png" alt="Kembot Petroleum Logo" class="site-logo-img">
+            </a>
+            <div class="top-contact">
+                <div class="contact-item">
+                    <span class="icon" style="color:var(--accent);font-size:1.5rem;">📍</span>
+                    <div class="contact-text">
+                        <strong>Main Location</strong><br>
+                        <span>Level 11, Platina, G Block, BKC, Bandra East, Mumbai Maharashtra, India 400051</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon" style="color:var(--accent);font-size:1.5rem;">✉️</span>
+                    <div class="contact-text">
+                        <strong>Mail Us</strong><br>
+                        <span>Contact@kembotpetroleum.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="bottom-nav">
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <label for="mobile-menu-toggle" class="mobile-menu-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                
+        <li class="dropdown" style="position: static;">
+            <a href="index.html#featured-products">Products +</a>
+            <div class="dropdown-menu mega-products-menu" style="left: 5%; right: 5%; width: 90%; max-width: 1200px; margin: 0 auto; top: calc(100% + 15px); padding: 1.8rem 2rem; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border-radius: 10px; border-top: 3px solid #ff4500;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid #e2e8f0;">
+                    <div style="font-family:'Outfit', sans-serif; font-size: 1.1rem; font-weight: 800; color: #0b1120;">
+                        Kembot Complete Product Range <span style="font-size: 0.85rem; font-weight: 600; color: #64748b; margin-left: 0.5rem;">(27 Dedicated Technical Formulations)</span>
+                    </div>
+                    <a href="equivalent-chart.html" style="font-size: 0.88rem; font-weight: 700; color: #ff4500; text-decoration: none;">
+                        View Equivalent Cross-Reference Chart &rarr;
+                    </a>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    
+            <div style="min-width: 180px;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                    Industrial Lubricants (11)
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    
+            <li><a href="products/soluble-cutting-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Soluble Cutting Oil</a></li>
+        
+            <li><a href="products/straight-cut-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Straight / Neat Cutting Oil</a></li>
+        
+            <li><a href="products/hone-flush-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hone Flush Oil & SPL</a></li>
+        
+            <li><a href="products/loom-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Loom Oils (Textile Machinery)</a></li>
+        
+            <li><a href="products/quenching-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Quenching Oils (Heat Treatment)</a></li>
+        
+            <li><a href="products/pneumatic-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Pneumatic Tool & Rock Drill Oils</a></li>
+        
+            <li><a href="products/way-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Slideway Oils (Way Lubricants)</a></li>
+        
+            <li><a href="products/press-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Press Oils (Metal Stamping & Drawing)</a></li>
+        
+            <li><a href="products/freeze-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Freeze Oils (Refrigeration Compressor)</a></li>
+        
+            <li><a href="products/edm-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">EDM Oil (Spark Erosion Fluid)</a></li>
+        
+            <li><a href="products/rust-preventive-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Rust Preventive Oils (RPO Series)</a></li>
+        
+                </ul>
+            </div>
+        
+            <div style="min-width: 180px;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                    Industrial Oil (6)
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    
+            <li><a href="products/hydraulic-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hydraulic Oils (Standard Anti-Wear)</a></li>
+        
+            <li><a href="products/hydraulic-oils-hlp.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hydraulic Oils HLP Series</a></li>
+        
+            <li><a href="products/gear-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Industrial Gear Oils & Gear EP Series</a></li>
+        
+            <li><a href="products/spindle-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Spindle Oils (High Speed)</a></li>
+        
+            <li><a href="products/machinery-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Machinery Oils (General Lubrication)</a></li>
+        
+            <li><a href="products/thermic-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Thermic Oils (Heat Transfer Fluids)</a></li>
+        
+                </ul>
+            </div>
+        
+            <div style="min-width: 180px;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                    Automotive Oil (6)
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    
+            <li><a href="products/engine-oils-linear.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Engine Oils (Linear / Monograde)</a></li>
+        
+            <li><a href="products/auto-special.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Auto Special Fluids & Treatments</a></li>
+        
+            <li><a href="products/multi-grade-engine-oil-milby.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Multi Grade Engine Oil (Milby)</a></li>
+        
+            <li><a href="products/multi-grade-diesel-premium.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Premium Multi Grade Diesel Engine Oil (MIL-C)</a></li>
+        
+            <li><a href="products/4t-motorcycle-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">4T / 4T Plus Motorcycle Oils</a></li>
+        
+            <li><a href="products/fork-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Front Fork Oils (Suspension Fluid)</a></li>
+        
+                </ul>
+            </div>
+        
+            <div style="min-width: 180px;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                    Greases (1)
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    
+            <li><a href="products/industrial-automotive-greases.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Industrial & Automotive Greases</a></li>
+        
+                </ul>
+            </div>
+        
+            <div style="min-width: 180px;">
+                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                    Specialties (3)
+                </div>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    
+            <li><a href="products/white-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">White Oils (Technical & Pharma Grade)</a></li>
+        
+            <li><a href="products/glass-cutting-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Glass Cutting Oil</a></li>
+        
+            <li><a href="products/transformer-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Transformer Oils (Electrical Insulating)</a></li>
+        
+                </ul>
+            </div>
+        
+                </div>
+            </div>
+        </li>
+    
+                <li><a href="index.html#why-choose">Why Choose Us</a></li>
+                <li><a href="index.html#locations">Global Locations</a></li>
+                <li><a href="index.html#testimonials">Clients</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="search-icon">🔍</div>
+        </nav>
+    </header>
+
+    <!-- Inner Banner -->
+    <section class="inner-banner">
+        <div class="container center">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> &raquo; <a href="#">Products</a> &raquo; <span>Equivalent Chart</span>
+            </div>
+            <h1 class="inner-title">Product Equivalent Chart</h1>
+            <p style="color:#cbd5e1; margin-top:0.5rem; font-size:1.05rem;">Cross reference Kembot products with major market brands (HPCL / IOC / BPCL / Castrol / Servo)</p>
+        </div>
+    </section>
+
+    <!-- Interactive Table Container -->
+    <main class="chart-section">
+        <div class="filter-controls">
+            <div class="search-input-box">
+                <span class="search-icon-pos">🔍</span>
+                <input type="text" id="chartSearch" placeholder="Search by product name, specification, or competitor brand..." onkeyup="filterChart()">
+            </div>
+            <div class="category-filter-btn-group">
+                <button class="cat-btn active" onclick="setCategoryFilter('all', this)">All (27)</button>
+                <button class="cat-btn" onclick="setCategoryFilter('industrial lubricants', this)">Industrial Lubricants</button>
+                <button class="cat-btn" onclick="setCategoryFilter('industrial oil', this)">Industrial Oil</button>
+                <button class="cat-btn" onclick="setCategoryFilter('automotive oil', this)">Automotive Oil</button>
+                <button class="cat-btn" onclick="setCategoryFilter('greases', this)">Greases</button>
+                <button class="cat-btn" onclick="setCategoryFilter('specialties', this)">Specialties</button>
+            </div>
+        </div>
+
+        <div class="chart-table-card">
+            <table class="chart-table" id="equivalentTable">
+                <thead>
+                    <tr>
+                        <th style="width: 60px; text-align: center;">Sl.No.</th>
+                        <th style="width: 220px;">Product Name</th>
+                        <th style="width: 250px;">Kembot Brand & Specs</th>
+                        <th>Equivalent in HPCL / IOC / BPCL / Castrol</th>
+                        <th style="width: 140px; text-align: center;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">01</td>
+        <td>
+            <a href="products/soluble-cutting-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Soluble Cutting Oil
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT SOL XL / SUPERCOOL - S</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: 20-150-001.I</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">COOLEDGE - 40, SERVOCUT - S / SHEROL - B / COOL - CUT - 40</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/soluble-cutting-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">02</td>
+        <td>
+            <a href="products/straight-cut-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Straight / Neat Cutting Oil
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT FIN-MB, FIN-CB, FIN-SB</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS-3065-1985 (Types I, II, III)</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">TRIMOFFIN / NORCAM / SERVOCUT / ILOCUT SERIES (51-945)</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/straight-cut-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="specialties">
+        <td style="text-align:center; font-weight:700; color:#888;">03</td>
+        <td>
+            <a href="products/white-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                White Oils (Technical & Pharma Grade)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Specialties</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT WHITE - A / KEMBOT WHITE - B</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Technical / Liquid Paraffin Standards</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">Meets All Premium Refined White Oil Specifications</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/white-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">04</td>
+        <td>
+            <a href="products/hydraulic-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Hydraulic Oils (Standard Anti-Wear)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT HYDRA 32, 46, 68, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS 10522 / DIN 51524 Part 1</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO SYSTEM / ENCLO / HYDROL / PERFECT O SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/hydraulic-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">05</td>
+        <td>
+            <a href="products/hydraulic-oils-hlp.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Hydraulic Oils HLP Series
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT HYDRA - HLP SERIES 32, 46, 68, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS 11656-1986, DIN 51524 Part 2 (HLP), Cincinnati Milacron P-68/P-69/P-70</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO SYSTEM HLP / ENCLO HLP / HYDROL HLP SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/hydraulic-oils-hlp.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">06</td>
+        <td>
+            <a href="products/engine-oils-linear.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Engine Oils (Linear / Monograde)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT LUBE 30, 40, 50</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: API CF/SF, IS 13656-2002 EDL-2</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">HYLUBE MILCY / SERVO PRIDE / ACTUMA ULTRA SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/engine-oils-linear.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">07</td>
+        <td>
+            <a href="products/gear-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Industrial Gear Oils & Gear EP Series
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT GEAR / GEAR EP SERIES 90, 140, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS 8489-1989 (EP Type), DIN 51517 Part 3 (CLP), AGMA 9005-E02</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO GEAR SUPER / SPIROL EP SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/gear-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">08</td>
+        <td>
+            <a href="products/hone-flush-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Hone Flush Oil & SPL
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT HONE FLUSH / KEMBOT HONE FLUSH SPL</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Kembot Hone 480, 980, 981 Series</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO HONE 7, CASTROL HONILO - 480, 980, 981 SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/hone-flush-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">09</td>
+        <td>
+            <a href="products/spindle-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Spindle Oils (High Speed)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT SPIN 2, 5, 10, 12, 15, 22</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 2, 5, 10, 12, 15, 22 / IS 493 Part 1</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO SPIN / HYDROL / SPINTEX SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/spindle-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">10</td>
+        <td>
+            <a href="products/machinery-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Machinery Oils (General Lubrication)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT LINE 32, 46, 68, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 32 to 460 / IS 493 Part 1</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO LINE / CABOL / YANTHROL SERIES J</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/machinery-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">11</td>
+        <td>
+            <a href="products/loom-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Loom Oils (Textile Machinery)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT TEX 100, 150</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Tex 100, Tex 150 / Textile Scourable Grade</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO LOOM SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/loom-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">12</td>
+        <td>
+            <a href="products/quenching-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Quenching Oils (Heat Treatment)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT QUENCH SERIES</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS 2664-1980 (Straight & Accelerated Grades)</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO QUENCH / THERMOL / META QUENCH SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/quenching-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial oil">
+        <td style="text-align:center; font-weight:700; color:#888;">13</td>
+        <td>
+            <a href="products/thermic-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Thermic Oils (Heat Transfer Fluids)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT THERM SERIES</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Thermic Fluid Standard / DIN 51522</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">HYTHERM / SERVO THERM / THERMOL SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/thermic-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">14</td>
+        <td>
+            <a href="products/pneumatic-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Pneumatic Tool & Rock Drill Oils
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT PNEUMO 46, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 46, 100, 150, 220, 320, 460</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">PNEUMATIC 100, SERVO PNEUM 100, METAMOL R100</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/pneumatic-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">15</td>
+        <td>
+            <a href="products/way-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Slideway Oils (Way Lubricants)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT WAY 32, 46, 68, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 32 to 460 / DIN 51502 CGLP / ISO 19378</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO WAY / METAMOL / WAYLUBE / MAGNA-BD SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/way-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">16</td>
+        <td>
+            <a href="products/press-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Press Oils (Metal Stamping & Drawing)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT PRESS 32, 46, 68, 100, 150, 220, 320, 460</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 32, 46, 68, 100, 150, 220, 320, 460</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO PRESS SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/press-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="specialties">
+        <td style="text-align:center; font-weight:700; color:#888;">17</td>
+        <td>
+            <a href="products/glass-cutting-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Glass Cutting Oil
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Specialties</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT GLASS CUTTING OIL</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Meets All Premium Glass Industry Standards</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">Meets All Other Reputed Brand Specs (Acecut, Silberschnitt, etc.)</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/glass-cutting-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="specialties">
+        <td style="text-align:center; font-weight:700; color:#888;">18</td>
+        <td>
+            <a href="products/transformer-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Transformer Oils (Electrical Insulating)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Specialties</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT TF OILS</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS-335: 2018 / IEC 60296</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">Meets IS-335 Specifications / Reputed Insulating Oils</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/transformer-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">19</td>
+        <td>
+            <a href="products/freeze-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Freeze Oils (Refrigeration Compressor)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT FREEZE 32, 46, 57, 68</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: VG 32, 46, 57, 68 / DIN 51503 (KAA / KC)</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">SERVO FREEZ / FREEZOL SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/freeze-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">20</td>
+        <td>
+            <a href="products/edm-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                EDM Oil (Spark Erosion Fluid)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT EDM SERIES</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Meets All Modern EDM Die-Sinking Standards</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">MEETS ALL OTHER REPUTED BRAND SPECS</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/edm-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">21</td>
+        <td>
+            <a href="products/auto-special.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Auto Special Fluids & Treatments
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT AUTO SPECIAL</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Meets All Reputed Automotive Special Specifications</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">MEETS ALL OTHER REPUTED BRAND SPECS</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/auto-special.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">22</td>
+        <td>
+            <a href="products/multi-grade-engine-oil-milby.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Multi Grade Engine Oil (Milby)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT MILBY 20W/40, 20W/50</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: API CF-4 / SG, IS 13656 EDL-3</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">CRB PLUS 20/W/40, CASTROL GTX 20/W/50</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/multi-grade-engine-oil-milby.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">23</td>
+        <td>
+            <a href="products/multi-grade-diesel-premium.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Premium Multi Grade Diesel Engine Oil (MIL-C)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT PREMIUM 15W/40 (CF4, CH4, CJ4, CK+ Series)</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: API CK-4 / CJ-4 / CI-4 Plus / CH-4 / CF-4, ACEA E9/E7, MB 228.31, Volvo VDS-4.5</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">DEUSOL SUPER / SERVO / MAGNATEC SERIES SERVO PRIDE / GTX EXTRA CF-4 SERIES</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/multi-grade-diesel-premium.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">24</td>
+        <td>
+            <a href="products/4t-motorcycle-oils.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                4T / 4T Plus Motorcycle Oils
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT 4T PLUS 10W/30, 10W/40, 20W/40, 20W/50</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: JASO MA2 / API SN / SM / SL</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">MAK 4T, SERVO 4T, ACTIVE 4T, IDEMITSU - 4T PLUS</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/4t-motorcycle-oils.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="industrial lubricants">
+        <td style="text-align:center; font-weight:700; color:#888;">25</td>
+        <td>
+            <a href="products/rust-preventive-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Rust Preventive Oils (RPO Series)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Industrial Lubricants</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT DW 901(WET), DW 902(DRY), 904, 630, 6304, 274</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: IS 1154 / IS 1153 Dewatering & Non-Dewatering Types</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">EQUIVALENT TO OTHER REPUTED BRANDS (Rustlick, Castrol Rustilo)</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/rust-preventive-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="automotive oil">
+        <td style="text-align:center; font-weight:700; color:#888;">26</td>
+        <td>
+            <a href="products/fork-oil.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Front Fork Oils (Suspension Fluid)
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Automotive Oil</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">KEMBOT FORK OILS (5W, 10W, 15W, 20W)</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: Premium Motorcycle Fork & Shock Absorber Standards</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">EQUIVALENT TO OTHER REPUTED BRANDS (Motul, Servo Fork Oil)</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/fork-oil.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+    <tr data-cat="greases">
+        <td style="text-align:center; font-weight:700; color:#888;">27</td>
+        <td>
+            <a href="products/industrial-automotive-greases.html" style="font-weight:700; color:#0b1120; text-decoration:none; display:block; font-size:1.02rem;">
+                Industrial & Automotive Greases
+            </a>
+            <span style="font-size:0.8rem; color:#ff4500; font-weight:600;">Greases</span>
+        </td>
+        <td>
+            <strong style="color:#0d1e50; font-size:0.95rem;">AP3, EP2, COPPER, ALVANIA, EP 0, EP00</strong>
+            <div style="font-size:0.82rem; color:#64748b; margin-top:2px;">Spec: NLGI 00, 0, 1, 2, 3 / IS 7623 / IS 12203</div>
+        </td>
+        <td>
+            <div style="font-size:0.92rem; color:#334155; font-weight:600; line-height:1.4;">EQUIVALENT TO OTHER REPUTED BRANDS (Servo Grease, Mobilux, Shell Gadus)</div>
+        </td>
+        <td style="text-align:center;">
+            <a href="products/industrial-automotive-greases.html" class="btn-card" style="display:inline-block; padding:0.4rem 0.9rem; background:#0d1e50; color:#fff; border-radius:4px; font-size:0.82rem; text-decoration:none; font-weight:600;">View Product &rarr;</a>
+        </td>
+    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" style="text-decoration: none; color: inherit;">
+                            <span style="font-size: 2rem; color: var(--accent);">🍃</span> <span class="text-accent">KEMBOT</span> PETROLEUM
+                        </a>
+                    </div>
+                    <p>Kembot Petrochemical Corporation is a distinguished manufacturer producing high-quality lubricants for all types of engines and industrial machinery.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Explore Catalog</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#featured-products">All 27 Products</a></li>
+                        <li><a href="equivalent-chart.html">Equivalent Chart</a></li>
+                        <li><a href="index.html#services">Energy Solutions</a></li>
+                        <li><a href="index.html#why-choose">Why Kembot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#locations">Global Locations</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Headquarters</h3>
+                    <p style="font-size:0.9rem; color:#aaa; line-height:1.6;">Level 11, Platina, G Block, BKC, Bandra East, Mumbai Maharashtra, India 400051</p>
+                                    </div>
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2026 Kembot Petroleum. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentCat = 'all';
+
+        function setCategoryFilter(cat, btn) {
+            currentCat = cat.toLowerCase();
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterChart();
+        }
+
+        function filterChart() {
+            const query = document.getElementById('chartSearch').value.toLowerCase();
+            const rows = document.querySelectorAll('#equivalentTable tbody tr');
+
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                const rowCat = row.getAttribute('data-cat') || '';
+                const matchCat = (currentCat === 'all' || rowCat.includes(currentCat));
+                const matchQuery = text.includes(query);
+
+                if (matchCat && matchQuery) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
