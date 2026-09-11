@@ -214,6 +214,7 @@ const SITE_SEARCH_INDEX = [
     { name: "Auto Special Oils (Pump & Gas)", cat: "Automotive Oil", desc: "Specialty agricultural pump set oil and CNG/LPG engine oil.", url: "products/auto-special.html" },
     { name: "Industrial & Automotive Greases", cat: "Greases", desc: "Lithium, AP-3, EP-2, Calcium and high-temp complex greases.", url: "products/industrial-automotive-greases.html" },
     { name: "White Oils (Liquid Paraffin)", cat: "Specialties", desc: "IP/BP/USP pure mineral white oil for cosmetic and industrial use.", url: "products/white-oils.html" },
+    { name: "All Products Catalog (Full 27 Range)", cat: "Catalog", desc: "Browse the complete product catalog of all 27 technical formulations and packaging options.", url: "products.html" },
     { name: "Equivalent Cross-Reference Chart", cat: "Tools", desc: "Compare Kembot formulas with HPCL, IOC, Castrol, and Servo grades.", url: "equivalent-chart.html" }
 ];
 

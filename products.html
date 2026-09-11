@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>All Products Catalog | Kembot Petroleum</title>
+    <meta name="description" content="Explore Kembot Petroleum's full product catalog of 27 high-performance industrial lubricants, automotive oils, greases, and specialty fluids.">
+    <link rel="stylesheet" href="styles.css?v=2.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .all-products-section {
+            padding: 3.5rem 1.5rem 5rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .catalog-header-box {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .catalog-header-box h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.3rem;
+            font-weight: 800;
+            color: #0b1120;
+            margin-bottom: 0.5rem;
+        }
+        .catalog-header-box p {
+            color: #64748b;
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .catalog-toolbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        .catalog-filter-group {
+            display: flex;
+            justify-content: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+        .catalog-filter-btn {
+            padding: 0.55rem 1.2rem;
+            border-radius: 25px;
+            border: 1px solid #cbd5e1;
+            background: #ffffff;
+            color: #475569;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .catalog-filter-btn:hover {
+            border-color: #ff4500;
+            color: #ff4500;
+        }
+        .catalog-filter-btn.active {
+            background: #ff4500;
+            color: #ffffff;
+            border-color: #ff4500;
+            box-shadow: 0 4px 12px rgba(255, 69, 0, 0.25);
+        }
+        .catalog-search-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 460px;
+        }
+        .catalog-search-wrap input {
+            width: 100%;
+            padding: 0.75rem 1.2rem 0.75rem 2.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            outline: none;
+            box-sizing: border-box;
+            background: #ffffff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .catalog-search-wrap input:focus {
+            border-color: #ff4500;
+            box-shadow: 0 0 0 3px rgba(255, 69, 0, 0.15);
+        }
+        .catalog-search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+        .catalog-grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.8rem;
+        }
+        .catalog-card-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .catalog-card-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+            border-color: #cbd5e1;
+        }
+        .catalog-img-box {
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 1.2rem;
+        }
+        .catalog-cat-tag {
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: #ff4500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
+        }
+        .catalog-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0b1120;
+            margin: 0.2rem 0 0.35rem 0;
+            line-height: 1.3;
+        }
+        .catalog-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .catalog-title a:hover {
+            color: #ff4500;
+        }
+        .catalog-subtitle {
+            font-size: 0.82rem;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+        }
+        .catalog-desc {
+            font-size: 0.86rem;
+            color: #334155;
+            margin-bottom: 1.3rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .catalog-btn {
+            display: block;
+            text-align: center;
+            padding: 0.65rem 1rem;
+            background: #0d1e50;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .catalog-btn:hover {
+            background: #ff4500;
+            transform: translateY(-1px);
+        }
+        @media (max-width: 768px) {
+            .all-products-section {
+                padding: 2.5rem 1rem 4rem;
+            }
+            .catalog-header-box h2 {
+                font-size: 1.8rem;
+            }
+            .catalog-grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="top-bar">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <img src="images/logo.png" alt="Kembot Petroleum Logo" class="site-logo-img">
+            </a>
+            <div class="top-contact">
+                <div class="contact-item">
+                    <span class="icon" style="color:var(--accent);font-size:1.5rem;">📍</span>
+                    <div class="contact-text">
+                        <strong>Main Location</strong><br>
+                        <span>Level 11, Platina, G Block, BKC, Bandra East, Mumbai Maharashtra, India 400051</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="icon" style="color:var(--accent);font-size:1.5rem;">✉️</span>
+                    <div class="contact-text">
+                        <strong>Mail Us</strong><br>
+                        <span>Contact@kembotpetroleum.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="bottom-nav">
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <label for="mobile-menu-toggle" class="mobile-menu-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                
+                <li class="dropdown" style="position: static;">
+                    <a href="products.html" class="active">Products +</a>
+                    <div class="dropdown-menu mega-products-menu" style="left: 5%; right: 5%; width: 90%; max-width: 1200px; margin: 0 auto; top: calc(100% + 15px); padding: 1.8rem 2rem; box-shadow: 0 15px 40px rgba(0,0,0,0.12); border-radius: 10px; border-top: 3px solid #ff4500;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 0.75rem;">
+                            <div style="font-family:'Outfit', sans-serif; font-size: 1.1rem; font-weight: 800; color: #0b1120;">
+                                Kembot Complete Product Range <span style="font-size: 0.85rem; font-weight: 600; color: #64748b; margin-left: 0.5rem;">(27 Dedicated Technical Formulations)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                                <a href="products.html" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.4rem 0.9rem; background:#ff4500; color:#fff; font-size:0.85rem; font-weight:700; border-radius:4px; text-decoration:none; box-shadow:0 2px 8px rgba(255,69,0,0.3);">
+                                    <span>📦</span> View All Products (27) &rarr;
+                                </a>
+                                <a href="equivalent-chart.html" style="font-size: 0.88rem; font-weight: 700; color: #0d1e50; text-decoration: none;">
+                                    Equivalent Chart &rarr;
+                                </a>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                            
+                            <div style="min-width: 180px;">
+                                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                                    Industrial Lubricants (11)
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li><a href="products/soluble-cutting-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Soluble Cutting Oil</a></li>
+                                    <li><a href="products/straight-cut-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Straight / Neat Cutting Oil</a></li>
+                                    <li><a href="products/hone-flush-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hone Flush Oil & SPL</a></li>
+                                    <li><a href="products/loom-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Loom Oils (Textile Machinery)</a></li>
+                                    <li><a href="products/quenching-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Quenching Oils (Heat Treatment)</a></li>
+                                    <li><a href="products/pneumatic-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Pneumatic Tool & Rock Drill Oils</a></li>
+                                    <li><a href="products/way-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Slideway Oils (Way Lubricants)</a></li>
+                                    <li><a href="products/press-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Press Oils (Metal Stamping & Drawing)</a></li>
+                                    <li><a href="products/freeze-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Freeze Oils (Refrigeration Compressor)</a></li>
+                                    <li><a href="products/edm-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">EDM Oil (Spark Erosion Fluid)</a></li>
+                                    <li><a href="products/rust-preventive-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Rust Preventive Oils (RPO Series)</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div style="min-width: 180px;">
+                                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                                    Industrial Oil (6)
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li><a href="products/hydraulic-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hydraulic Oils (Standard Anti-Wear)</a></li>
+                                    <li><a href="products/hydraulic-oils-hlp.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Hydraulic Oils HLP Series</a></li>
+                                    <li><a href="products/gear-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Industrial Gear Oils & Gear EP Series</a></li>
+                                    <li><a href="products/spindle-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Spindle Oils (High Speed)</a></li>
+                                    <li><a href="products/machinery-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Machinery Oils (General Lubrication)</a></li>
+                                    <li><a href="products/thermic-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Thermic Oils (Heat Transfer Fluids)</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div style="min-width: 180px;">
+                                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                                    Automotive Oil (6)
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li><a href="products/engine-oils-linear.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Engine Oils (Linear / Monograde)</a></li>
+                                    <li><a href="products/auto-special.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Auto Special Fluids & Treatments</a></li>
+                                    <li><a href="products/multi-grade-engine-oil-milby.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Multi Grade Engine Oil (Milby)</a></li>
+                                    <li><a href="products/multi-grade-diesel-premium.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Premium Multi Grade Diesel Engine Oil (MIL-C)</a></li>
+                                    <li><a href="products/4t-motorcycle-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">4T / 4T Plus Motorcycle Oils</a></li>
+                                    <li><a href="products/fork-oil.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Front Fork Oils (Suspension Fluid)</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div style="min-width: 180px;">
+                                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                                    Greases (1)
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li><a href="products/industrial-automotive-greases.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Industrial & Automotive Greases</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div style="min-width: 180px;">
+                                <div style="font-size: 0.78rem; font-weight: 800; color: #ff4500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ff4500;">
+                                    Specialties (3)
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li><a href="products/white-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">White Oils (Technical & Pharma Grade)</a></li>
+                                    <li><a href="products/glass-cutting-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Glass Cutting Oil</a></li>
+                                    <li><a href="products/transformer-oils.html" style="font-size:0.86rem; color:#334155; padding:0.35rem 0.6rem; display:block; border-radius:4px; font-weight:600; text-decoration:none; transition:all 0.2s;">Transformer Oils (Electrical Insulating)</a></li>
+                                </ul>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </li>
+            
+                <li><a href="index.html#why-choose">Why Choose Us</a></li>
+                <li><a href="index.html#locations">Global Locations</a></li>
+                <li><a href="index.html#testimonials">Clients</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="search-icon">🔍</div>
+        </nav>
+    </header>
+
+    <!-- Inner Banner -->
+    <section class="inner-banner">
+        <div class="container center">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> &raquo; <a href="#">Products</a> &raquo; <span>All Products</span>
+            </div>
+            <h1 class="inner-title">Complete Product Range</h1>
+            <p style="color:#cbd5e1; margin-top:0.5rem; font-size:1.05rem;">Explore our comprehensive lineup of 27 high-performance lubricant formulations</p>
+        </div>
+    </section>
+
+    <!-- Main All Products Catalog Container -->
+    <main class="all-products-section">
+        <div class="catalog-header-box">
+            <h2>Complete Product Catalog (All 27 Products)</h2>
+            <p>Select any product to view full technical data sheets, applications, and competitor brand equivalents.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+            <!-- Filter Category Buttons -->
+            <div class="catalog-filter-group">
+                <button class="catalog-filter-btn active" onclick="filterAllProductsPage('all', this)">All (27)</button>
+                <button class="catalog-filter-btn" onclick="filterAllProductsPage('industrial lubricants', this)">Industrial Lubricants</button>
+                <button class="catalog-filter-btn" onclick="filterAllProductsPage('industrial oil', this)">Industrial Oil</button>
+                <button class="catalog-filter-btn" onclick="filterAllProductsPage('automotive oil', this)">Automotive Oil</button>
+                <button class="catalog-filter-btn" onclick="filterAllProductsPage('greases', this)">Greases</button>
+                <button class="catalog-filter-btn" onclick="filterAllProductsPage('specialties', this)">Specialties</button>
+            </div>
+
+            <!-- Instant Search Bar -->
+            <div class="catalog-search-wrap">
+                <span class="catalog-search-icon">🔍</span>
+                <input type="text" id="catalogSearchInput" placeholder="Filter by product name, grade, or application..." oninput="searchAllProductsPage(this.value)">
+            </div>
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div id="allProductsGrid" class="catalog-grid-layout">
+            <!-- Product cards will be loaded here dynamically and SSR fallback -->
+        </div>
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer-overlay"></div>
+        <div class="footer-content">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html" style="text-decoration: none; color: inherit;">
+                            <span style="font-size: 2rem; color: var(--accent);">🍃</span> <span class="text-accent">KEMBOT</span> PETROLEUM
+                        </a>
+                    </div>
+                    <p>Kembot Petrochemical Corporation is a distinguished manufacturer producing high-quality lubricants for all types of engines.</p>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">in</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="equivalent-chart.html">Equivalent Chart</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Help & Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Gallery</h3>
+                    <div class="footer-gallery">
+                        <img src="images/real-tanker-1.jpg" alt="Kembot Tanker Truck Side">
+                        <img src="images/real-tanker-2.jpg" alt="Kembot Tanker Truck Back">
+                        <img src="images/real-oil-group.jpg" alt="Kembot Lubricants Range">
+                        <img src="images/real-oil-extreme.jpg" alt="Kembot Extreme 4T Oil">
+                        <img src="images/real-grease-bucket.jpg" alt="Kembot Grease Bucket">
+                        <img src="images/real-grease-raw.jpg" alt="Kembot Grease Drums">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom center">
+                <p>&copy; 2026 Kembot Petroleum. All rights reserved.</p>
+                <span class="footer-credit">Made with <span class="heart-icon">❤️</span> by <a href="https://www.regortz.com/" target="_blank" rel="noopener noreferrer" class="regortz-link">Regortz</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js?v=2.3"></script>
+    <script>
+        let currentCategory = 'all';
+        let currentQuery = '';
+
+        function renderProductsCatalog() {
+            fetch('products-data.json?v=2.3')
+                .then(res => res.json())
+                .then(products => {
+                    const grid = document.getElementById('allProductsGrid');
+                    if (!grid) return;
+                    
+                    const filtered = products.filter(p => {
+                        const matchCat = currentCategory === 'all' || p.category.toLowerCase().includes(currentCategory);
+                        const matchQuery = !currentQuery || 
+                            p.name.toLowerCase().includes(currentQuery) || 
+                            (p.brand && p.brand.toLowerCase().includes(currentQuery)) ||
+                            (p.tagline && p.tagline.toLowerCase().includes(currentQuery)) ||
+                            (p.category && p.category.toLowerCase().includes(currentQuery));
+                        return matchCat && matchQuery;
+                    });
+
+                    if (filtered.length === 0) {
+                        grid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: #64748b;"><h3>No matching products found</h3><p style="margin-top:0.5rem;">Try adjusting your category filter or search query.</p></div>';
+                        return;
+                    }
+
+                    grid.innerHTML = filtered.map(p => `
+                        <div class="catalog-card-item" data-category="${p.category.toLowerCase()}">
+                            <div class="catalog-img-box" style="background-image: url('${p.image}');"></div>
+                            <span class="catalog-cat-tag">${p.category}</span>
+                            <h4 class="catalog-title"><a href="products/${p.id}.html">${p.name}</a></h4>
+                            <div class="catalog-subtitle">${p.brand || ''}</div>
+                            <div class="catalog-desc">${p.tagline || ''}</div>
+                            <a href="products/${p.id}.html" class="catalog-btn">View Specifications &rarr;</a>
+                        </div>
+                    `).join('');
+                })
+                .catch(err => {
+                    console.error('Failed to load products data:', err);
+                });
+        }
+
+        function filterAllProductsPage(category, btn) {
+            currentCategory = category.toLowerCase();
+            document.querySelectorAll('.catalog-filter-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            renderProductsCatalog();
+        }
+
+        function searchAllProductsPage(query) {
+            currentQuery = query.toLowerCase().trim();
+            renderProductsCatalog();
+        }
+
+        // Check if category is passed via URL hash or param
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const catParam = urlParams.get('category');
+            if (catParam) {
+                const btn = Array.from(document.querySelectorAll('.catalog-filter-btn'))
+                    .find(b => b.innerText.toLowerCase().includes(catParam.toLowerCase()));
+                if (btn) {
+                    filterAllProductsPage(catParam, btn);
+                    return;
+                }
+            }
+            renderProductsCatalog();
+        });
+    </script>
+</body>
+</html>
