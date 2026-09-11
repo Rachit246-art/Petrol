@@ -8,7 +8,7 @@
     "spec": "20-150-001.I",
     "equivalent": "COOLEDGE - 40, SERVOCUT - S / SHEROL - B / COOL - CUT - 40",
     "packaging": "20L, 50L, 210L Drums",
-    "image": "images/product-drum.png",
+    "image": "images/Products/SOLUBLE CUTTING OIL-2.png",
     "tagline": "High-performance bio-stable water-soluble cutting fluid for severe metal machining.",
     "description": "Kembot Soluble Cutting Oil is a premium emulsifiable metalworking fluid formulated with refined base oils, extreme pressure additives, and multi-component biocides. It forms a highly stable, milky emulsion when mixed with water and provides exceptional cooling and lubricating characteristics.",
     "applications": [
@@ -56,7 +56,7 @@
     "spec": "IS-3065-1985 (Types I, II, III)",
     "equivalent": "TRIMOFFIN / NORCAM / SERVOCUT / ILOCUT SERIES (51-945)",
     "packaging": "20L, 210L Drums",
-    "image": "images/product-drum.png",
+    "image": "images/Products/MOULINE CUTTING OIL-1.png",
     "tagline": "Heavy-duty non-emulsifiable straight cutting fluid for precision machining operations.",
     "description": "Kembot Neat Cutting Oils (FIN Series) are blended from select solvent-refined mineral oils fortified with fatty oils, extreme-pressure chlor-sulfur compounds, and anti-mist agents to meet demanding machining operations.",
     "applications": [
@@ -151,7 +151,7 @@
     "spec": "IS 10522 / DIN 51524 Part 1",
     "equivalent": "SERVO SYSTEM / ENCLO / HYDROL / PERFECT O SERIES",
     "packaging": "20L, 50L, 210L Drums",
-    "image": "images/product-drum.png",
+    "image": "images/Products/HYDRAULIC OIL 68-1.png",
     "tagline": "High-reliability anti-wear and anti-foam hydraulic oils for modern power transmission.",
     "description": "Kembot Hydra oils are premium heavy-duty hydraulic power transmission fluids blended with solvent refined base stocks, anti-wear zinc additives, corrosion inhibitors, and foam suppressants.",
     "applications": [
@@ -199,7 +199,7 @@
     "spec": "IS 11656-1986, DIN 51524 Part 2 (HLP), Cincinnati Milacron P-68/P-69/P-70",
     "equivalent": "SERVO SYSTEM HLP / ENCLO HLP / HYDROL HLP SERIES",
     "packaging": "20L, 50L, 210L Drums",
-    "image": "images/product-drum.png",
+    "image": "images/Products/HYDRAULIC OIL 68-2.png",
     "tagline": "High-performance premium HLP hydraulic fluid for high-pressure electro-hydraulic systems.",
     "description": "Kembot Hydra HLP oils are advanced premium-performance anti-wear hydraulic oils engineered for severe operating conditions with high pressures, precision servo-valves, and extreme temperature fluctuations.",
     "applications": [
@@ -247,7 +247,7 @@
     "spec": "API CF/SF, IS 13656-2002 EDL-2",
     "equivalent": "HYLUBE MILCY / SERVO PRIDE / ACTUMA ULTRA SERIES",
     "packaging": "1L, 5L, 20L, 50L, 210L",
-    "image": "images/product-bottle.png",
+    "image": "images/Products/ENGINE OIL-1.png",
     "tagline": "Heavy-duty monograde diesel and gasoline engine oils for commercial vehicles and stationary gensets.",
     "description": "Kembot Lube monograde engine oils are formulated with high-viscosity index virgin paraffinic base stocks and detergent-dispersant additive chemistry to protect diesel and petrol engines.",
     "applications": [
@@ -295,7 +295,7 @@
     "spec": "IS 8489-1989 (EP Type), DIN 51517 Part 3 (CLP), AGMA 9005-E02",
     "equivalent": "SERVO GEAR SUPER / SPIROL EP SERIES",
     "packaging": "20L, 50L, 210L Drums",
-    "image": "images/product-drum.png",
+    "image": "images/Products/GEAR OIL.png",
     "tagline": "Extreme pressure industrial gear lubricants engineered for heavy shock loads.",
     "description": "Kembot Gear EP Series oils are formulated from solvent-extracted high VI base oils combined with sulfur-phosphorus extreme pressure additives that impart exceptional load carrying and anti-scuffing capabilities.",
     "applications": [
@@ -391,7 +391,7 @@
     "spec": "VG 2, 5, 10, 12, 15, 22 / IS 493 Part 1",
     "equivalent": "SERVO SPIN / HYDROL / SPINTEX SERIES",
     "packaging": "20L, 210L Drums",
-    "image": "images/product-bottle.png",
+    "image": "images/Products/SPINDLE OIL.png",
     "tagline": "Low-viscosity premium oils for high-speed textile and machine tool spindles.",
     "description": "Kembot Spin oils are ultra-light viscosity lubricating oils processed from hydrofinished paraffinic base stocks with anti-oxidants, anti-rust, and lubricity film improvers designed for tight-clearance spindle bearings.",
     "applications": [
@@ -869,7 +869,7 @@
     "spec": "VG 32, 46, 57, 68 / DIN 51503 (KAA / KC)",
     "equivalent": "SERVO FREEZ / FREEZOL SERIES",
     "packaging": "20L, 210L Drums",
-    "image": "images/product-bottle.png",
+    "image": "images/Products/COMPRESSOR OIL.png",
     "tagline": "Low pour point refrigeration compressor oils for CFC, HCFC, and ammonia chillers.",
     "description": "Kembot Freeze oils are specially refined wax-free naphthenic oils designed for the lubrication of refrigeration and air conditioning compressors operating at sub-zero evaporator temperatures.",
     "applications": [
@@ -1005,7 +1005,7 @@
     "spec": "API CF-4 / SG, IS 13656 EDL-3",
     "equivalent": "CRB PLUS 20/W/40, CASTROL GTX 20/W/50",
     "packaging": "1L, 3.5L, 5L, 7.5L, 10L, 20L, 50L, 210L",
-    "image": "images/product-bottle.png",
+    "image": "images/Products/ENGINE OIL-2.png",
     "tagline": "All-weather multigrade diesel and gasoline engine oil for reliable commercial transport.",
     "description": "Kembot Milby is a premium multigrade crankcase lubricant engineered for heavy-duty diesel engines operating under severe stop-and-go and highway hauling conditions.",
     "applications": [
@@ -1053,7 +1053,7 @@
     "spec": "API CK-4 / CJ-4 / CI-4 Plus / CH-4 / CF-4, ACEA E9/E7, MB 228.31, Volvo VDS-4.5",
     "equivalent": "DEUSOL SUPER / SERVO / MAGNATEC SERIES SERVO PRIDE / GTX EXTRA CF-4 SERIES",
     "packaging": "1L, 5L, 15L, 20L, 55L, 210L",
-    "image": "images/product-drum.png",
+    "image": "images/Products/ENGINE OIL-3.png",
     "tagline": "Advanced heavy-duty diesel engine oil for modern BS-VI / Euro VI fleets with DPF and SCR.",
     "description": "Kembot Premium Diesel Engine Oil is a top-tier heavy-duty lubricant formulated with synthetic blend base oils and Low-SAPS additive technology to protect modern emission-controlled diesel engines.",
     "applications": [
@@ -1238,7 +1238,7 @@
     "spec": "NLGI 00, 0, 1, 2, 3 / IS 7623 / IS 12203",
     "equivalent": "EQUIVALENT TO OTHER REPUTED BRANDS (Servo Grease, Mobilux, Shell Gadus)",
     "packaging": "500g, 1kg, 5kg, 18kg Pail, 180kg Drum",
-    "image": "images/product-bottle.png",
+    "image": "images/Products/MULTI-PURPOSE GREASE.png",
     "tagline": "Heavy-duty lithium, lithium complex, and specialty anti-seize greases.",
     "description": "Kembot Grease range includes Lithium All-Purpose (AP3), Extreme Pressure (EP2, EP0, EP00), High Temperature Lithium Complex, and Copper Anti-Seize compounds for severe friction and load conditions.",
     "applications": [
