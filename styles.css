@@ -169,6 +169,10 @@ body {
     opacity: 0.8;
 }
 
+.mobile-menu-mail-item {
+    display: none !important;
+}
+
 /* Dropdown Menu */
 .nav-links .dropdown {
     position: relative;
@@ -1871,6 +1875,10 @@ body {
         background: rgba(255, 69, 0, 0.15) !important;
         color: #ff4500 !important;
         padding-left: 1.8rem !important;
+    }
+    .mobile-menu-mail-item {
+        display: block !important;
+        width: 100% !important;
     }
     .mobile-menu-mail-item a {
         background: rgba(255, 69, 0, 0.08) !important;

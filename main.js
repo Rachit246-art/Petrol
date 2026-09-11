@@ -50,24 +50,36 @@ function initMobileNav() {
         }
     });
 
-    // Ensure mobile menu contains direct Mail Us item at bottom of menu links
-    if (navLinks && !navLinks.querySelector('.mobile-menu-mail-item')) {
-        const mailLi = document.createElement('li');
-        mailLi.className = 'mobile-menu-mail-item';
-        mailLi.innerHTML = `
-            <a href="mailto:Contact@kembotpetroleum.com" class="mobile-mail-link">
-                <span style="display:flex; align-items:center; gap:0.6rem;">
-                    <span style="font-size:1.15rem; line-height:1;">✉️</span>
-                    <span style="display:flex; flex-direction:column; line-height:1.2;">
-                        <small style="font-size:0.7rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px;">Mail Us</small>
-                        <span style="font-size:0.88rem; color:#ff4500; font-weight:700;">Contact@kembotpetroleum.com</span>
-                    </span>
-                </span>
-                <span style="font-size:1rem; color:#ff4500;">&rarr;</span>
-            </a>
-        `;
-        navLinks.appendChild(mailLi);
+    // Only inject Mail Us item on mobile screens (<= 992px) and remove on desktop
+    function updateMobileMailItem() {
+        if (!navLinks) return;
+        const existingMail = navLinks.querySelector('.mobile-menu-mail-item');
+        if (window.innerWidth <= 992) {
+            if (!existingMail) {
+                const mailLi = document.createElement('li');
+                mailLi.className = 'mobile-menu-mail-item';
+                mailLi.innerHTML = `
+                    <a href="mailto:Contact@kembotpetroleum.com" class="mobile-mail-link">
+                        <span style="display:flex; align-items:center; gap:0.6rem;">
+                            <span style="font-size:1.15rem; line-height:1;">✉️</span>
+                            <span style="display:flex; flex-direction:column; line-height:1.2;">
+                                <small style="font-size:0.7rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px;">Mail Us</small>
+                                <span style="font-size:0.88rem; color:#ff4500; font-weight:700;">Contact@kembotpetroleum.com</span>
+                            </span>
+                        </span>
+                        <span style="font-size:1rem; color:#ff4500;">&rarr;</span>
+                    </a>
+                `;
+                navLinks.appendChild(mailLi);
+            }
+        } else {
+            if (existingMail) {
+                existingMail.remove();
+            }
+        }
     }
+    updateMobileMailItem();
+    window.addEventListener('resize', updateMobileMailItem);
 }
 
 if (document.readyState === 'loading') {

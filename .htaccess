@@ -1,0 +1,35 @@
+# =========================================================================
+# Hostinger / LiteSpeed & Apache Cache-Busting Configuration
+# Prevents phone and browser cache issues when code is updated
+# =========================================================================
+
+# 1. Disable Hostinger LiteSpeed Server Caching for fresh updates
+<IfModule LiteSpeed>
+    CacheDisable public /
+    CacheLookup off
+</IfModule>
+
+# 2. Prevent caching of HTML files so phone browsers always load latest HTML & links
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+    </FilesMatch>
+
+    # CSS and JavaScript: Must revalidate with server on every request
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+    </FilesMatch>
+</IfModule>
+
+# 3. Disable mod_expires for HTML and dynamic resources
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+    ExpiresByType text/javascript "access plus 0 seconds"
+</IfModule>
