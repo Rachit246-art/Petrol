@@ -34,8 +34,8 @@ function initMobileNav() {
 
     // Close mobile menu when clicking any inner dropdown product link or standard menu link
     document.querySelectorAll('.nav-links a').forEach(link => {
-        // If it's NOT the dropdown toggle itself
-        if (!link.parentElement.classList.contains('dropdown') || !link.getAttribute('href').includes('featured-products')) {
+        // If it's NOT a top-level dropdown toggle trigger
+        if (!link.matches('.dropdown > a')) {
             if (!link.dataset.bound) {
                 link.dataset.bound = 'true';
                 link.addEventListener('click', () => {
